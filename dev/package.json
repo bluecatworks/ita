@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "autoprefixer": "^6.2.3",
+    "bootstrap-styl": "^4.0.5",
+    "css-loader": "^0.21.0",
+    "file-loader": "^0.8.5",
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "lost": "^6.6.3",
+    "postcss-loader": "^0.7.0",
+    "rupture": "^0.6.1",
+    "style-loader": "^0.13.0",
+    "stylus": "^0.52.4",
+    "stylus-loader": "^1.4.2",
+    "typographic": "^2.9.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --progress --colors --content-base ../public"
+  }
+}

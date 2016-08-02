@@ -1,0 +1,256 @@
+@import 'styl/reset'
+//@import 'styl/typographic'
+@import 'styl/bootstrap'
+//@import 'styl/utils'
+
+/**
+ * Fonts
+ **/
+@font-face
+	font-family: 'Raleway';
+	src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Raleway-Regular.woff') format('woff'), url('fonts/Raleway-Regular.ttf')  format('truetype'), url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+@font-face
+	font-family: 'OptimusPrinceps';
+	src: url('fonts/OptimusPrinceps.eot?#iefix') format('embedded-opentype'),  url('fonts/OptimusPrinceps.woff') format('woff'), url('fonts/OptimusPrinceps.ttf')  format('truetype'), url('fonts/OptimusPrinceps.svg#OptimusPrinceps') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+body
+	color: #444444
+	background: #fff
+	font-family: Raleway
+	a
+		color: blue
+	p
+		margin: 5px 0
+
+.container
+	padding: 10px
+	margin: 5px auto
+	width: 1180px
+
+/**
+ * Header
+ **/
+header
+	padding: 0 5px
+	background: #F0F0F0
+	height: 100px
+	overflow: hidden
+	.logo
+		img
+			position: relative
+			top: -10px
+	.socials
+		padding: 29px 0 0
+		a
+			width: 40px
+			height: 40px
+			display: inline-block
+			margin: 0 2px
+			&:hover
+				transition: background-image 0.1s ease
+			&.face
+				background: url('images/face-icon.png') no-repeat center
+				&:hover
+					background: url('images/face-icon-act.png') no-repeat center
+			&.in
+				background: url('images/in-icon.png') no-repeat center
+				&:hover
+					background: url('images/in-icon-act.png') no-repeat center
+			&.tw
+				background: url('images/tw-icon.png') no-repeat center
+				&:hover
+					background: url('images/tw-icon-act.png') no-repeat center
+			&.you
+				background: url('images/you-icon.png') no-repeat center
+				&:hover
+					background: url('images/you-icon-act.png') no-repeat center
+	.lang
+		text-align: right
+		color: #007777
+		a
+			color: #007777
+			font-size: 12px
+	.search-box
+		text-align: right
+		input[type="text"]
+			border: 1px solid #fff
+			font-size: 12px
+			font-weight: 300
+			font-style: italic
+			background: inherit
+			padding: 3px 8px
+			width: 100px
+			box-sizing: border-box
+			box-shadow: inset 1px 1px 1px #CECECE
+			&::-webkit-input-placeholder,
+			&:-moz-placeholder,
+			&::-moz-placeholder,
+			&:-ms-input-placeholder
+				font-style: italic
+				font-size: 12px
+				font-weight: 300
+				font-style: italic
+		#searchsubmit
+			background: url(images/search.png) no-repeat center center
+			width: 21px
+			height: 22px
+			border: 0px
+
+.logo-area
+	background: #fff
+	margin: 0px
+	padding: 0px
+	.logo-text
+		font-family: OptimusPrinceps
+		font-size: 21px
+		text-align: center
+		display: none
+	.navbar-toggle
+		display: block
+		float: none
+		.icon-bar
+			background: #007777
+	.search-box-area
+		display: none
+
+.left-collapse
+	position: absolute
+	height: 100%
+	background: #151515
+	width: 25%
+	top: 0px
+	left: 0px
+	z-index: 99
+	display: none
+
+/**
+ * Content
+ **/
+.content
+	.entry_image
+		img
+			width: 100%
+	.entry_date
+		color: $descr_color
+	.paginate
+		clear: both
+		text-align: center
+
+/**
+ * Footer
+ **/
+footer
+	.container
+		border-top: 5px solid #222222
+	.logo-text
+		font-family: OptimusPrinceps
+		font-size: 21px
+	.copy
+		font-family: Raleway
+		font-size: 12px
+	.socials
+		a
+			width: 40px
+			height: 40px
+			display: inline-block
+			margin: 0 2px
+			&.face
+				background: url('images/face-icon-ft.png') no-repeat center
+				&:hover
+					background: url('images/face-icon-ft-act.png') no-repeat center
+			&.in
+				background: url('images/in-icon-ft.png') no-repeat center
+				&:hover
+					background: url('images/in-icon-ft-act.png') no-repeat center
+			&.tw
+				background: url('images/tw-icon-ft.png') no-repeat center
+				&:hover
+					background: url('images/tw-icon-ft-act.png') no-repeat center
+			&.you
+				background: url('images/you-icon-ft.png') no-repeat center
+				&:hover
+					background: url('images/you-icon-ft-act.png') no-repeat center
+
+/**
+ * Responsive styles
+ **/
+
+/** Landscape phones and down 
+ * @media (max-width: 480px)
+ **/
+
+/** Landscape phone to portrait tablet
+ * @media (max-width: 767px)
+ **/
+
+/** Portrait tablet to landscape and desktop
+ * @media (min-width: 768px) and (max-width: 979px)
+ **/
+
+/** Large desktop
+ * @media (min-width: 1200px)
+ **/
+
+
+/* Responsive Menu */
+@media (max-width: 979px)
+	.navbar-inverse
+		border-radius: 3px
+		.navbar-brand
+			display: block !important
+		.menu
+			li
+				display: block
+				line-height: normal
+				text-align: left
+				a
+					color: #999999
+					font-weight: bold
+					border-radius: 3px
+					padding: 7px 13px
+					margin-bottom: 2px
+					&:hover
+						color: #fff
+						background: #111111
+
+/**
+ * Helpers
+ **/
+.text_right
+	text-align: right
+
+.text_center
+	text-align: center
+
+.right
+	float: right
+
+.left
+	float: left
+
+.hidden
+	display: none !important
+	visibility: hidden
+
+.underline
+	text-decoration: underline
+
+.clear
+	clear: both
+
+.no-padd
+	padding: 0px !important
+
+.no-marg
+	margin: 0px !important
+
+.width-100
+	width: 100%
+
+.navbar-toggle .icon-bar + .icon-bar
+	margin-top: 6px
