@@ -19,6 +19,8 @@
 	</footer>
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="<?php bloginfo('template_url'); ?>/javascript/aviacordion-dev.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/javascript/avia.js"></script>
 	<?php wp_footer(); ?>
 </body>
 </html>

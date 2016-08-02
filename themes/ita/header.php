@@ -11,6 +11,7 @@
 	<title><?php bloginfo('name'); ?></title>
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/slideshow.css">
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
@@ -34,7 +35,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 text-center">
-				<a class="logo" href="">
+				<a class="logo" href="<?php echo get_site_url();  ?>">
 					<img src="<?php bloginfo('template_url'); ?>/logo.png" alt="">
 				</a>
 			</div>
@@ -58,7 +59,7 @@
 	</header>
 
 	<div class="logo-area container width-100">
-		<div class="col-md-2">
+		<div class="col-md-3">
 			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -68,7 +69,7 @@
 		<div class="col-md-6 logo-text">
 			International Training Academy
 		</div>
-		<div class="col-md-4 search-box-area">
+		<div class="col-md-3 search-box-area">
 			<div class="search-box">
 				<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<div>
@@ -81,8 +82,17 @@
 	</div>
 
 	<div class="left-collapse">
-		<i id="close-menu" class="fa fa-times" aria-hidden="true"></i>
+		<a class="close-menu" href=""></a>
+		<a href="<?php echo get_site_url();  ?>" class="menu-logo">
+			<img src="<?php bloginfo('template_url'); ?>/images/menu-logo.png" alt="">
+		</a>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav') ); ?>
-	</div>
+		<div class="socials">
+			<a class="tw" href=""></a>
+			<a class="face" href=""></a>
+			<a class="in" href=""></a>
+			<a class="you" href=""></a>
+		</div>
+	</div><div class="menu-overlay"></div>
 
 	<div class="content clear container">

@@ -15,10 +15,14 @@ $(document).ready(function(){
 
 	$('.navbar-toggle').click(function(){
 		$('.left-collapse').toggle( "right" );
+		$('.menu-overlay').toggle();
+		return false;
 	});
 
 	$('#close-menu').click(function(){
 		$('.left-collapse').toggle( "right" );
+		$('.menu-overlay').toggle();
+		return false;
 	});
 
 });
