@@ -182,6 +182,20 @@ header
  * Content
  **/
 .content
+	.entry_title 
+		display: inline-block
+		background-size: auto 2px
+		padding: 0 28px
+		background: url(images/center-line.jpg) repeat-x center
+		text-align: center
+		background-position: bottom 14px center
+		span
+			background: #fff
+			padding: 0 13px
+			font-size: 36px
+			font-style: italic
+			color: #808080
+			font-family: Cormorant
 	.entry_image
 		img
 			width: 100%
@@ -190,6 +204,43 @@ header
 	.paginate
 		clear: both
 		text-align: center
+
+	.metaslider
+		.flex-control-nav
+			bottom: 20px
+			z-index: 90
+			li
+				background: none
+				border: 1px dotted #fff
+				border-radius: 50%
+				margin: 0 4px
+				a
+					background: none
+					margin: 2px
+					box-shadow: 0 0 0 0
+					height: 7px
+					width: 7px
+					&:hover, &.flex-active
+						background: #fff
+		.caption-wrap
+			background: none
+			opacity: 1
+			top: 73px
+			bottom: none
+			span
+				float: left
+				clear: both
+				background: #000
+				font-size: 24px
+				font-style: italic
+				color: #fff
+				font-family: Cormorant
+				padding: 5px 20px 6px 17px
+				text-transform: uppercase
+				&:first-child
+					padding-top: 8px
+			.caption 
+				padding: 0px
 
 
 /**

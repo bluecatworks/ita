@@ -89,11 +89,17 @@
 	</div>
 
 	<?php if(have_posts()): the_post(); ?>
+	<div class="row">
 		<div class="col-md-9">
 			<article class="page">
-				<h2 class="entry_title">
-					<?php the_title(); ?>
-				</h2>
+
+				<?php echo do_shortcode('[metaslider id=16]'); ?>
+
+				<div class="text_center">
+					<h2 class="entry_title">
+						<span><?php the_title(); ?></span>
+					</h2>
+				</div>
 
 				<div class="entry_content">
 					<?php the_content(); ?>
@@ -103,6 +109,7 @@
 		<div class="col-md-3">
 			<?php include (TEMPLATEPATH . '/sidebar-right.php'); ?>
 		</div>
+	</div>
 	<?php endif; ?>
 	
 <?php get_footer(); ?>
