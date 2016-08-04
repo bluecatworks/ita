@@ -95,4 +95,9 @@
 		</div>
 	</div><div class="menu-overlay"></div>
 
-	<div class="content clear container">
+	<?php if(is_page('student-spa')) { ?>
+		<div class="banner">
+			<img src="<?php bloginfo('template_url'); ?>/images/in-icon-act.png" />
+		</div>
+	<?php } ?>
+	<div class="content clear">

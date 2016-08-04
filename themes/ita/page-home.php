@@ -88,28 +88,30 @@
 		</div>
 	</div>
 
-	<?php if(have_posts()): the_post(); ?>
-	<div class="row">
-		<div class="col-md-9">
-			<article class="page">
+	<div class="container">
+		<?php if(have_posts()): the_post(); ?>
+		<div class="row">
+			<div class="col-md-9">
+				<article class="page">
 
-				<?php echo do_shortcode('[metaslider id=16]'); ?>
+					<?php echo do_shortcode('[metaslider id=16]'); ?>
 
-				<div class="text_center">
-					<h2 class="entry_title">
-						<span><?php the_title(); ?></span>
-					</h2>
-				</div>
+					<div class="text_center">
+						<h2 class="entry_title">
+							<span><?php the_title(); ?></span>
+						</h2>
+					</div>
 
-				<div class="entry_content">
-					<?php the_content(); ?>
-				</div>
-			</article>
+					<div class="entry_content">
+						<?php the_content(); ?>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-3">
+				<?php include (TEMPLATEPATH . '/sidebar-right.php'); ?>
+			</div>
 		</div>
-		<div class="col-md-3">
-			<?php include (TEMPLATEPATH . '/sidebar-right.php'); ?>
-		</div>
+		<?php endif; ?>
 	</div>
-	<?php endif; ?>
 	
 <?php get_footer(); ?>
