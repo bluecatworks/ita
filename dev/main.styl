@@ -37,6 +37,8 @@ body
 			text-decoration: none
 	p
 		margin: 5px 0
+	*:focus
+		outline: none
 
 .container
 	padding: 10px
@@ -146,7 +148,7 @@ header
 		right: 20px
 		top: 11px
 	.menu-logo
-		display: block
+		display: inline-block
 	.navbar-nav
 		display: block
 		border-top: 1px solid #DCDCDC
@@ -183,6 +185,8 @@ header
  * Content
  **/
 .content
+	p
+		margin: 11px 0 20px
 	.entry_title 
 		display: inline-block
 		background-size: auto 2px
@@ -207,6 +211,8 @@ header
 		text-align: center
 
 	.metaslider
+		.flexslider
+			margin: 0 0 15px
 		.flex-control-nav
 			bottom: 20px
 			z-index: 90
@@ -243,6 +249,57 @@ header
 			.caption 
 				padding: 0px
 
+.sidebar-right
+	.block
+		border: 1px dotted #E9E9E9
+		border-bottom: 5px  solid #000
+		margin-bottom: 40px
+		padding: 33px 10px 32px 20px
+		.block-title
+			display: block
+			background: #000
+			color: #fff
+			text-transform: uppercase
+			font-family: Cormorant
+			font-style: italic
+			font-size: 21px
+			padding: 9px 11px 8px
+			margin: -33px -10px 20px -20px
+		&.info
+			font-size: 18px
+			text-transform: uppercase
+			line-height: 30px
+		&.contact
+			padding-bottom: 0px
+	.wpcf7
+		margin: 0 10px 0 0
+	.block-link
+		border: 1px dotted #E9E9E9
+		display: block
+		text-align: center
+		margin: 30px 20px
+		font-size: 12px
+		font-weight: 700
+		padding: 8px 0
+		color: #444444
+		text-transform: uppercase
+
+.wpcf7
+	margin: 0 10px -10px 0 !important
+	input[type="text"],
+	input[type="email"]
+		border: 0px
+		border-bottom: 2px solid #A1A1A1
+		padding: 0 10px 1px
+		font-size: 12px
+		font-style: italic
+	input[type="submit"]
+		font-size: 12px
+		background: inherit
+		display: block
+		border: 1px dotted #E9E9E9
+		padding: 5px 0 4px
+		width: 100%
 
 /**
  * Sidebar
