@@ -2,6 +2,7 @@
 //@import 'styl/typographic'
 @import 'styl/bootstrap'
 @import 'styl/spa'
+@import 'styl/programs'
 //@import 'styl/utils'
 
 /**
@@ -184,6 +185,44 @@ header
 /**
  * Content
  **/
+
+.student-spa_page,
+.programs_page
+	.banner
+		position: relative
+
+	.entry_title
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		margin: 0 auto
+		text-align: center
+		background: none !important
+
+		span
+			position: relative
+			background-color: transparent !important
+			&:before
+				content: " "
+				background: url(images/center-line.jpg) repeat-x center
+				display: block
+				width: 25px
+				height: 1px
+				position: absolute
+				left: -25px
+				top: 50%
+
+			&:after
+				content: " "
+				background: url(images/center-line.jpg) repeat-x center
+				display: block
+				width: 25px
+				height: 1px
+				position: absolute
+				right: -25px
+				top: 50%
+
 .content
 	p
 		margin: 11px 0 20px

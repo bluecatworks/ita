@@ -14,8 +14,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/slideshow.css">
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/javascript/bootstrap.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/main.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
 
 	<?php wp_head(); ?>
 
