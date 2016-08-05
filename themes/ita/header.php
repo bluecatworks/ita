@@ -89,7 +89,7 @@
 		<a href="<?php echo get_site_url();  ?>" class="menu-logo">
 			<img src="<?php bloginfo('template_url'); ?>/images/menu-logo.png" alt="">
 		</a>
-		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav') ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => ' ', 'container_class' => 'nav navbar-nav') ); ?>
 		<div class="socials">
 			<a class="tw" href=""></a>
 			<a class="face" href=""></a>
