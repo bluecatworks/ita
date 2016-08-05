@@ -106,6 +106,39 @@
 						<?php the_content(); ?>
 					</div>
 				</article>
+				
+				<div class="hr"></div>
+
+				<div class="row new-row">
+					<div class="col-md-4">
+						<h2 class="content-title"><?php echo get_the_title(22); ?></h2>
+						<div class="relative">
+							<?php echo get_the_post_thumbnail(22); ?>
+							<div class="white-mask"></div>
+						</div>
+						<div class="chapter"><?php echo get_the_excerpt(22); ?></div>
+						<a href="<?php echo get_the_permalink(22); ?>" class="more">Read more</a>
+					</div>
+					<div class="col-md-4">
+						<h2 class="content-title"><?php echo get_the_title(20); ?></h2>
+						<div class="relative">
+							<?php echo get_the_post_thumbnail(20); ?>
+							<div class="white-mask"></div>
+						</div>
+						<div class="chapter"><?php echo get_the_excerpt(20); ?></div>
+						<a href="<?php echo get_the_permalink(22); ?>" class="more">Read more</a>
+					</div>
+					<div class="col-md-4">
+						<h2 class="content-title"><?php echo get_the_title(13); ?></h2>
+						<div class="relative">
+							<?php echo get_the_post_thumbnail(13); ?>
+							<div class="white-mask"></div>
+						</div>
+						<div class="chapter"><?php echo get_the_excerpt(13); ?></div>
+						<a href="<?php echo get_the_permalink(22); ?>" class="more">Read more</a>
+					</div>
+				</div>
+
 			</div>
 			<div class="col-md-3">
 				<?php include (TEMPLATEPATH . '/sidebar-right.php'); ?>

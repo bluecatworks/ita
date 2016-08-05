@@ -24,40 +24,42 @@
 
 <body class="<?php echo the_slug(); ?>" style="display:none">
 	<!--[if lt IE 8]><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p><![endif]-->
-
-	<header>
-		<div class="container width-100 no-padd no-marg">
-			<div class="col-md-4">
-				<div class="socials">
-					<a class="tw" href=""></a>
-					<a class="face" href=""></a>
-					<a class="in" href=""></a>
-					<a class="you" href=""></a>
+	
+	<div class="header-br">
+		<header>
+			<div class="container width-100 no-padd no-marg">
+				<div class="col-md-4">
+					<div class="socials">
+						<a class="tw" href=""></a>
+						<a class="face" href=""></a>
+						<a class="in" href=""></a>
+						<a class="you" href=""></a>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<a class="logo" href="<?php echo get_site_url();  ?>">
+						<img src="<?php bloginfo('template_url'); ?>/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-md-4 text-right">
+					<div class="lang">
+						<a href="">EN</a> / 
+						<a href="">RU</a> / 
+						<a href="">CH</a> / 
+						<a href="">GR</a>
+					</div>
+					<div class="search-box">
+						<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<div>
+								<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="search..." />
+								<input type="submit" id="searchsubmit" value="" />
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-4 text-center">
-				<a class="logo" href="<?php echo get_site_url();  ?>">
-					<img src="<?php bloginfo('template_url'); ?>/logo.png" alt="">
-				</a>
-			</div>
-			<div class="col-md-4 text-right">
-				<div class="lang">
-					<a href="">EN</a> / 
-					<a href="">RU</a> / 
-					<a href="">CH</a> / 
-					<a href="">GR</a>
-				</div>
-				<div class="search-box">
-					<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<div>
-							<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="search..." />
-							<input type="submit" id="searchsubmit" value="" />
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</header>
+		</header>
+	</div>
 
 	<div class="logo-area container width-100">
 		<div class="col-md-3">

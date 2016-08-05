@@ -1,6 +1,7 @@
 	</div>
-	<footer>
-		<div class="container">
+	</div>
+	<div class="container">
+		<footer>
 			<div class="row">
 				<div class="col-md-6 logo-text">
 					International Training Academy
@@ -15,14 +16,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<?php if(is_page('home')) { ?>
-		<script src="<?php bloginfo('template_url'); ?>/javascript/avia.js"></script>
-	<?php } ?>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/aviacordion-dev.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/javascript/avia.js"></script>
 	<?php wp_footer(); ?>
 </body>
 </html>
