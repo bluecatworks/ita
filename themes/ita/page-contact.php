@@ -3,11 +3,15 @@
 		<div class="container">
 			<div class="col-sm-9">
 				<article class="page">
-					<h2 class="entry_title text-center">
-						<span><?php the_title(); ?></span>
-					</h2>
+					<div class="text-center">
+						<h2 class="entry_title">
+							<span><?php the_title(); ?></span>
+						</h2>
+					</div>
 					<div class="entry_content">
 						<?php the_content(); ?>
+
+						<h3>Location</h3>
 						<div class="row info">
 							<div class="col-sm-6">
 								830 N. Meacham Road, Schaumburg,<br>
