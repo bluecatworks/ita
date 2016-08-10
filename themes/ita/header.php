@@ -42,13 +42,13 @@
 					</a>
 				</div>
 				<div class="col-md-4 text-right">
-					<div class="lang">
+					<div class="lang col-xs-6">
 						<a href="">EN</a> / 
 						<a href="">RU</a> / 
 						<a href="">CH</a> / 
 						<a href="">GR</a>
 					</div>
-					<div class="search-box">
+					<div class="search-box col-xs-6">
 						<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<div>
 								<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="search..." />
@@ -62,17 +62,17 @@
 	</div>
 
 	<div class="logo-area container width-100">
-		<div class="col-md-3">
+		<div class="col-md-3 col-xs-3">
 			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
 		</div>
-		<div class="col-md-6 logo-text">
+		<div class="col-md-6 logo-text col-xs-9">
 			International Training Academy
 		</div>
-		<div class="col-md-3 search-box-area">
+		<div class="col-md-3 search-box-area mobile-hidden">
 			<div class="search-box">
 				<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<div>
