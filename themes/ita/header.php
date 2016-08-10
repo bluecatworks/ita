@@ -12,9 +12,11 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/slideshow.css">
+	<link href="<?php bloginfo('template_url'); ?>/jquery.bxslider.css"></link>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/bootstrap.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/javascript/jquery.bxslider.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/main.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
 

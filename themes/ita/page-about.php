@@ -1,12 +1,42 @@
 <?php get_header(); ?>
+	<script>
+		window.onhashchange = function() {
+		$('.active').removeClass('active');
+		var hash = window.location.hash;
+		$( "a[href='"+hash+"']" ).addClass('active');
+	}
+	$(function() {
+		$('.accordeon .item .acc-title').on('click', function() {
+			$(this).toggleClass('open');
+			$(this).next().slideToggle();
+		});
+		$('.testimonial-slider').bxSlider({
+		  minSlides: 1,
+		  maxSlides: 1,
+		  controls: false,
+		  pager: true
+		});
+	});
+	</script>
 	<?php if(have_posts()): the_post(); ?>
-		<div class="container">
+		<div class="container small">
+			<div class="sidemenu">
+				<ul>
+					<li><a href="#founder" class="active">Our Founder</a></li>
+					<li><a href="#history">School History</a></li>
+					<li><a href="#facultystaff">Faculty and Staff</a></li>
+					<!--li><a href="#community">Community Involvement</a></li-->
+					<li><a href="#students">Our Students Say</a></li>
+				</ul>
+			</div>
 			<article class="page">
 				<div class="entry_content">
 						<div id="founder">
-							<h2 class="entry_title">
-								<span>Our Founder</span>
-							</h2>
+							<div class="text-center">
+								<h2 class="entry_title">
+									<span>Our Founder</span>
+								</h2>
+							</div>
 
 							<div class="img">
 								<img src="<?php bloginfo('template_url'); ?>/images/natalia.png" >
@@ -17,7 +47,7 @@
 								<p>Dr. Natalia Doran is the founder and president of the International Training Academy.</p>
 
 								<p>With more than 30 years of experience as a Dermatologist in Europe and as an educator, Esthetics teacher, Esthetician, and Nationally Certified MA and MA instructor in the United States, Dr. Doran worked hard on bringing skin care education to the superior level by incorporating it with medical level knowledge.  </p>
-
+								<div class="clearfix"></div>
 								<p>
 									Dr. Doran did a great job and revolutionized Esthetics program, methods, and techniques used in the skin care industry. Besides that she is trying to change Skin care education in the USA and bring it internationally to the highest level. She relentlessly continues to improve the level of skin care professionals and revolutionize methods and techniques used in the industry.Dr-Natalia-Doran-Skin-Whisperer
 								</p>
@@ -33,17 +63,27 @@
 							</div>
 						</div>
 						<div id="history">
-							<h2 class="entry_title">
-								<span>School History</span>
-							</h2>
+							<div class="text-center">
+								<h2 class="entry_title">
+									<span>School History</span>
+								</h2>
+							</div>
 
-							<p>At our Academy, we continually strive for excellence in everything that we do. Our revolutionary approach to study combined with advanced techniques foster an atmosphere of accelerated professional and personal growth. Our passionate commitment to innovative ideas expands far beyond the health care education.</p>
+							<div class="row">
+								<div class="col-sm-8">
+									<p>At our Academy, we continually strive for excellence in everything that we do. Our revolutionary approach to study combined with advanced techniques foster an atmosphere of accelerated professional and personal growth. Our passionate commitment to innovative ideas expands far beyond the health care education.</p>
 
-							<p>Quite simply, we want you to have the best experience possible when studying with us. This experience will then allow you to achieve all of your professional goals, and will allow you to lead a happy, fulfilled, and financially secure life.</p>
+									<p>Quite simply, we want you to have the best experience possible when studying with us. This experience will then allow you to achieve all of your professional goals, and will allow you to lead a happy, fulfilled, and financially secure life.</p>
+								</div>
+
+								<div class="col-sm-4">
+									<img src="<?php bloginfo('template_url'); ?>/images/history.png">
+								</div>
+							</div>
 
 							<div class="accordeon">
 								<div class="item">
-									<p class="acc-title">Mission</p>
+									<p class="acc-title open">Mission</p>
 									<p class="acc-content">Our mission is to provide high quality of vocational training to our students and empower them to realize their professional goals in their chosen careers. The Academy is dedicated to nurturing its diverse, multicultural family of learners, promoting academic excellence and professionalism, and positively impacting local communities.</p>
 								</div>
 
@@ -59,32 +99,34 @@
 							</div>
 
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-6 values">
 									<h3 class="text-center">Values</h3>
 									<p><strong>The values of the faculty, students, and staff of International Training Academy are:</strong><br>
-									• Professional integrity in education, research, and service
-									• Compassion, equity, and social justice
-									• Multidisciplinary collaborative approach to problems
-									• Passion for knowledge and desire to improve and innovate
+									• Professional integrity in education, research, and service<br>
+									• Compassion, equity, and social justice<br>
+									• Multidisciplinary collaborative approach to problems<br>
+									• Passion for knowledge and desire to improve and innovate<br>
 									• Respect for and inclusion of diversity and community</p>
 								</div>
 
-								<div class="col-sm-6">
+								<div class="col-sm-6 goals">
 									<h3 class="text-center">Goals</h3>
 									<p><strong>The goals of International Training Academy are to:</strong><br>
-									• Provide high quality training, which enables students to find positions in their chosen field
-									• Continue to operate an efficient institution, according to fiscally responsible practices
-									• Create an inclusive and positive environment for all students
-									• Provide a positive work environment for staff
+									• Provide high quality training, which enables students to find positions in their chosen field<br>
+									• Continue to operate an efficient institution, according to fiscally responsible practices<br>
+									• Create an inclusive and positive environment for all students<br>
+									• Provide a positive work environment for staff<br>
 									• Develop and maintain ties with the community</p>
 								</div>
 							</div>
 						</div>
 
 						<div id="facultystaff">
-							<h2 class="entry_title">
-								<span>Faculty and Staff</span>
-							</h2>
+							<div class="text-center">
+								<h2 class="entry_title">
+									<span>Faculty and Staff</span>
+								</h2>
+							</div>
 
 							<p class="name">Dr. Natalia Doran</p>
 
@@ -92,7 +134,7 @@
 
 							<p><strong>Dr. Doran has received her Medical Degree in Dermatology, as well as a M.S. in Educational Psychology</strong>. She is a frequent public speaker and a published author.  Although she no longer practices dermatology, to stay abreast the new developments in science and medicine, Dr. Doran regularly attends Dermatology Round Tables. She is also actively involved with several non-profit organizations. Dr. Doran is fluent in English and Russian.</p>
 						
-							<div class="row">
+							<div class="row drs">
 								<div class="col-sm-6">
 									<p class="name">Ms. Anastasia</p>
 									<p><strong>Ms. Anastasia has earned both her undergraduate and graduate degrees from Northwestern University</strong>. She had worked in finance and consulting before being selected for a prestigious congressional fellowship in Germany. While abroad, Ms. Anastasia had an opportunity to gain invaluable work experience with one of the world’s largest cosmetics companies.</p>
@@ -124,29 +166,200 @@
 							</div>
 						</div>
 
-						<div id="community">
-							<h2 class="entry_title">
-								<span>Community Involvement</span>
-							</h2>
+						<div id="community" class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<div class="text-center">
+									<h2 class="entry_title">
+										<span>Community Involvement</span>
+									</h2>
+								</div>
 
-							<p class="subheading">We believe it is incredibly important.</p>
-							<p>We are extremely proud to announce that the profits from the procedures are donated to charity! Some of the non-profit organizations with whom we have been involved are:</p>
+								<p class="subheading text-center">We believe it is incredibly important.</p>
+								<p>We are extremely proud to announce that the profits from the procedures are donated to charity! Some of the non-profit organizations with whom we have been involved are:</p>
 
-							• <a href="#">The American Red Cross</a>
-							• <a href="#">The Leukemia & Lymphoma Society</a>
-							• <a href="#">Marklund</a>
-							• <a href="#">Hemophylia Foundation of Illinois</a>
-							• <a href="#">LivingWell Cancer Resource Center</p>
+								• <a href="#">The American Red Cross</a><br>
+								• <a href="#">The Leukemia & Lymphoma Society</a><br>
+								• <a href="#">Marklund</a><br>
+								• <a href="#">Hemophylia Foundation of Illinois</a><br>
+								• <a href="#">LivingWell Cancer Resource Center</a>
+							</div>
 						</div>
 						<div id="students">
-							<h2 class="entry_title">
-								<span>Our Students Say</span>
-							</h2>
+							<div class="text-center">
+								<h2 class="entry_title">
+									<span>Our Students Say</span>
+								</h2>
+							</div>
 
 							<p>We take pride in having incredibly successful students who work not only in a number of U.S. States, but also in several countries!</p>
 
 							<div class="video">
-								<iframe width="640" height="380" src="https://www.youtube.com/embed/szWuGoo1KB0" frameborder="0" allowfullscreen></iframe>
+								<!--iframe width="640" height="380" src="https://www.youtube.com/embed/szWuGoo1KB0" frameborder="0" allowfullscreen></iframe-->
+							</div>
+
+							<div class="social-media">
+								<h3>Social Media About ITA</h3>
+								<div class="logos">
+									<a href="#">
+										<img src="<?php bloginfo('template_url'); ?>/images/yelp.png"><br>
+										<span>Yelp</span>
+									</a>
+									<a href="#">
+										<img src="<?php bloginfo('template_url'); ?>/images/ip.png"><br>
+										<span>InsiderPages</span>
+									</a>
+									<a href="#">
+										<img src="<?php bloginfo('template_url'); ?>/images/mc.png"><br>
+										<span>MerchantCircle</span>
+									</a>
+									<a href="#">
+										<img src="<?php bloginfo('template_url'); ?>/images/yah.png"><br>
+										<span>YahooLocal</span>
+									</a>
+									<a href="#">
+										<img src="<?php bloginfo('template_url'); ?>/images/dex.png"><br>
+										<span>DexKnows</span>
+									</a>
+									<a href="#">
+										<img src="<?php bloginfo('template_url'); ?>/images/yelp.png"><br>
+										<span>Yelp Reviews ITA</span>
+									</a>
+									<a href="#">
+										<img src="<?php bloginfo('template_url'); ?>/images/yelp.png"><br>
+										<span>Yelp Reviews ITA</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="testimonials">
+								<h3>Testimonials</h3>
+								<div class="testimonial-slider">
+									<div class="item">
+										Within the first five minutes of meeting with Dr. Doran, I know that this was the right school for me. I had never been so excited to go to school before. She makes learning so enjoyable and has a positive attitude. Dr. Doran puts her focus on making sure we are learning and understanding everything. I know that I will be a great esthetician because I have a great teacher. This school is like a second home. There other students are very friendly and helpful. I have not regretted coming to any class. This the best decision I have ever made.
+
+										<div class="author">Shauna S.</div>
+									</div>
+									<div class="item">
+										Within the first five minutes of meeting with Dr. Doran, I know that this was the right school for me. I had never been so excited to go to school before. She makes learning so enjoyable and has a positive attitude. Dr. Doran puts her focus on making sure we are learning and understanding everything. I know that I will be a great esthetician because I have a great teacher. This school is like a second home. There other students are very friendly and helpful. I have not regretted coming to any class. This the best decision I have ever made.
+
+										<div class="author">Shauna S.</div>
+									</div>
+									<div class="item">
+										Within the first five minutes of meeting with Dr. Doran, I know that this was the right school for me. I had never been so excited to go to school before. She makes learning so enjoyable and has a positive attitude. Dr. Doran puts her focus on making sure we are learning and understanding everything. I know that I will be a great esthetician because I have a great teacher. This school is like a second home. There other students are very friendly and helpful. I have not regretted coming to any class. This the best decision I have ever made.
+
+										<div class="author">Shauna S.</div>
+									</div>
+									<div class="item">
+										Within the first five minutes of meeting with Dr. Doran, I know that this was the right school for me. I had never been so excited to go to school before. She makes learning so enjoyable and has a positive attitude. Dr. Doran puts her focus on making sure we are learning and understanding everything. I know that I will be a great esthetician because I have a great teacher. This school is like a second home. There other students are very friendly and helpful. I have not regretted coming to any class. This the best decision I have ever made.
+
+										<div class="author">Shauna S.</div>
+									</div>
+									<div class="item">
+										Within the first five minutes of meeting with Dr. Doran, I know that this was the right school for me. I had never been so excited to go to school before. She makes learning so enjoyable and has a positive attitude. Dr. Doran puts her focus on making sure we are learning and understanding everything. I know that I will be a great esthetician because I have a great teacher. This school is like a second home. There other students are very friendly and helpful. I have not regretted coming to any class. This the best decision I have ever made.
+
+										<div class="author">Shauna S.</div>
+									</div>
+									<div class="item">
+										Within the first five minutes of meeting with Dr. Doran, I know that this was the right school for me. I had never been so excited to go to school before. She makes learning so enjoyable and has a positive attitude. Dr. Doran puts her focus on making sure we are learning and understanding everything. I know that I will be a great esthetician because I have a great teacher. This school is like a second home. There other students are very friendly and helpful. I have not regretted coming to any class. This the best decision I have ever made.
+
+										<div class="author">Shauna S.</div>
+									</div>
+									<div class="item">
+										Within the first five minutes of meeting with Dr. Doran, I know that this was the right school for me. I had never been so excited to go to school before. She makes learning so enjoyable and has a positive attitude. Dr. Doran puts her focus on making sure we are learning and understanding everything. I know that I will be a great esthetician because I have a great teacher. This school is like a second home. There other students are very friendly and helpful. I have not regretted coming to any class. This the best decision I have ever made.
+
+										<div class="author">Shauna S.</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="find">
+								<h3>Find an Esthetician</h3>
+								<p>Many graduates of International Training Academy work in prestigious salons, elite spas, and with top medical professionals. And a number have started their own successful businesses.</p>
+
+								<div class="row labels">
+									<div class="text-center cell">
+										<strong>Name</strong>
+									</div>
+									<div class="text-center cell">
+										<strong>City</strong>
+									</div>
+									<div class="text-center cell">
+										<strong>Phone</strong>
+									</div>
+									<div class="text-center cell-big">
+										<strong>Website</strong>
+									</div>
+								</div>
+								<div class="row">
+									<div class="text-center cell">
+										Si Belle Spa
+									</div>
+									<div class="text-center cell">
+										Itasca
+									</div>
+									<div class="text-center cell">
+										(224) 210-9648
+									</div>
+									<div class="text-center cell-big">
+										<a href="http://www.sibellespa.com">www.sibellespa.com</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="text-center cell">
+										Skin Wellness
+									</div>
+									<div class="text-center cell">
+										Lake Zurich
+									</div>
+									<div class="text-center cell">
+										(847) 847-7763	
+									</div>
+									<div class="text-center cell-big">
+										<a href="http://www.skinwellnessbyrenee.skincaretherapy.net">www.skinwellnessbyrenee.skincaretherapy.net</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="text-center cell">
+										ALovishSpa
+									</div>
+									<div class="text-center cell">
+										Oakbrook Terrace
+									</div>
+									<div class="text-center cell">
+										(630) 359-4819
+									</div>
+									<div class="text-center cell-big">
+										<a href="http://www.alovishspa.com">www.alovishspa.com</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="text-center cell">
+										Replenish 224
+									</div>
+									<div class="text-center cell">
+										Roselle
+									</div>
+									<div class="text-center cell">
+										(630) 624-3450
+									</div>
+									<div class="text-center cell-big">
+										<a href="http://www.facebook.com/Replenish224/info">www.facebook.com/Replenish224/info</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="text-center cell">
+										FOG Cosmetics
+									</div>
+									<div class="text-center cell">
+										Homewood
+									</div>
+									<div class="text-center cell">
+										(708) 535-2500
+									</div>
+									<div class="text-center cell-big">
+										<a href="http://www.fogcosmetics.com">www.fogcosmetics.com</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					<?php the_content(); ?>
