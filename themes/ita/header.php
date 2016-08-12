@@ -49,10 +49,7 @@
 				</div>
 				<div class="col-md-4 text-right">
 					<div class="lang col-xs-6">
-						<a href="">EN</a> / 
-						<a href="">RU</a> / 
-						<a href="">CH</a> / 
-						<a href="">GR</a>
+						<?php echo do_shortcode('[GTranslate]'); ?>
 					</div>
 					<div class="search-box col-xs-6">
 						<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
