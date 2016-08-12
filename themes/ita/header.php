@@ -12,11 +12,15 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/slideshow.css">
-	<link href="<?php bloginfo('template_url'); ?>/jquery.bxslider.css"></link>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/magnific-popup.css"></link>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/jquery.bxslider.css"></link>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/bootstrap.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/jquery.bxslider.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/javascript/jquery.magnific-popup.min.js"></script>
+	<script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+
 	<script src="<?php bloginfo('template_url'); ?>/assets/main.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
 
@@ -63,25 +67,27 @@
 		</header>
 	</div>
 
-	<div class="logo-area container width-100">
-		<div class="col-md-3 col-xs-3">
-			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-		<div class="col-md-6 logo-text col-xs-9">
-			International Training Academy
-		</div>
-		<div class="col-md-3 search-box-area mobile-hidden">
-			<div class="search-box">
-				<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<div>
-						<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="search..." />
-						<input type="submit" id="searchsubmit" value="" />
-					</div>
-				</form>
+	<div class="logo-area width-100">
+		<div class="container">
+			<div class="col-md-3 col-xs-3">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="col-md-6 logo-text col-xs-9">
+				International Training Academy
+			</div>
+			<div class="col-md-3 search-box-area mobile-hidden">
+				<div class="search-box">
+					<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<div>
+							<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="search..." />
+							<input type="submit" id="searchsubmit" value="" />
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
