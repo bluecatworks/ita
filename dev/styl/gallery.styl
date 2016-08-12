@@ -2,12 +2,26 @@
 	.container.big
 		width: 1220px
 
+		+below(1024px)
+			width: 100%
+
+		+below(767px)
+			width: 100%
+
 	.grid
 		margin-top: 25px
 
 		.item
 			width: 300px
 			height: 300px
+
+			@media (max-width: 1024px) and (orientation: portrait)
+				width: 192px
+				height: 192px
+
+			+below(767px)
+				width: 100%
+				height: auto
 
 			a
 				display: block
@@ -35,9 +49,21 @@
 
 		.item-width-2
 			width: 600px
+			@media (max-width: 1024px) and (orientation: portrait)
+				width: 384px
+
+			+below(767px)
+				width: 100%
+				height: auto
 
 		.item-height-2
 			height: 600px
+			@media (max-width: 1024px) and (orientation: portrait)
+				height: 384px
+
+			+below(767px)
+				width: 100%
+				height: auto
 
 	.show-more
 		margin-top: 20px

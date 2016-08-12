@@ -90,8 +90,8 @@
 							<h3 class="bold">Hair Removal (Waxing)</h3>
 
 							<div class="row prices">
-								<div class="col-sm-6">
-									<div class="col-sm-6 item">
+								<div class="col-sm-6 col-xs-6">
+									<div class="col-sm-6 col-xs-6 item">
 										<div>Eyebrows</div>
 										<div>Lip</div>
 										<div>Chin</div>
@@ -101,7 +101,7 @@
 										<div>Full Arms</div>
 										<div>1/2 Legs</div>
 									</div>
-									<div class="col-sm-6 item">
+									<div class="col-sm-6 col-xs-6 item">
 										<div>$10.00</div>
 										<div>$5.00</div>
 										<div>$5.00</div>
@@ -112,8 +112,8 @@
 										<div>$20.00</div>
 									</div>
 								</div>
-								<div class="col-sm-6">
-									<div class="col-sm-6 item">
+								<div class="col-sm-6 col-xs-6">
+									<div class="col-sm-6 col-xs-6 item">
 										<div>Full Legs</div>
 										<div>Chest</div>
 										<div>Back</div>
@@ -122,7 +122,7 @@
 										<div>French</div>
 										<div>Brazilian</div>
 									</div>
-									<div class="col-sm-6 item">
+									<div class="col-sm-6 col-xs-6 item">
 										<div>$35.00</div>
 										<div>$20.00 and up</div>
 										<div>$20.00 and up</div>

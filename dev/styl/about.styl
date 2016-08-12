@@ -6,6 +6,11 @@
 		position: fixed
 		left: 20px
 		top: 220px
+		z-index: 9
+
+		+below(767px)
+			display: none
+
 		ul
 			margin: 0
 			padding: 0
@@ -174,11 +179,16 @@
 
 			&.labels
 				border-top: none
+				+below(767px)
+					display: none
 
 			.cell
 				border-right: 1px dotted #E6E6E6
 				lost-column: 2.3/12 0 0
 				padding: 10px
+
+				+below(767px)
+					lost-column: 1/1
 
 				&:last-child
 					border-right: none
@@ -186,6 +196,11 @@
 			.cell-big
 				lost-column: 5.1/12 0 0
 				padding: 10px
+				+below(767px)
+					lost-column: 1/1
+
+					a
+						word-break: break-all
 
 	.entry_content
 		a
