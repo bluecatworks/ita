@@ -20,7 +20,6 @@
 		</div>
 		<div class="container">
 			<article class="page">
-
 				<div class="entry_content">
 					<?php the_content(); ?>
 				</div>
