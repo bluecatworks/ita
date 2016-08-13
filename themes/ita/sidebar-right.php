@@ -13,7 +13,7 @@
 
 	<div class="block-image">
 		<img src="<?php bloginfo('template_url'); ?>/images/home-blog.jpg" alt="">
-		<a href="" class="position-center">ITA BLOG</a>
+		<a href="/blog" class="position-center">ITA BLOG</a>
 		<div class="white-mask"></div>
 	</div>
 

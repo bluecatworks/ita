@@ -1,1 +1,15 @@
 /* * Theme Name: ita * Version: 1.0 */
+.entry_content h1,h2,h3,h4 {
+font-family: Cormorant !important;
+font-style: italic !Important;
+}
+body .alignright {
+    float: right;
+    margin: 4px 0px 0px 10px;
+    display: block;
+}
+body .alignleft {
+    float: left;
+    margin: 4px 0px 0px 10px;
+    display: block;
+}

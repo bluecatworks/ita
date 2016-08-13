@@ -126,7 +126,7 @@
 							<div class="white-mask"></div>
 						</div>
 						<div class="chapter"><?php echo get_the_excerpt(20); ?></div>
-						<a href="<?php echo get_the_permalink(22); ?>" class="more">Read more</a>
+						<a href="<?php echo get_the_permalink(20); ?>" class="more">Read more</a>
 					</div>
 					<div class="col-md-4">
 						<h2 class="content-title"><?php echo get_the_title(13); ?></h2>
@@ -135,7 +135,7 @@
 							<div class="white-mask"></div>
 						</div>
 						<div class="chapter"><?php echo get_the_excerpt(13); ?></div>
-						<a href="<?php echo get_the_permalink(22); ?>" class="more">Read more</a>
+						<a href="<?php echo get_the_permalink(13); ?>" class="more">Read more</a>
 					</div>
 				</div>
 
