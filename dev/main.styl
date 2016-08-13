@@ -238,48 +238,43 @@ header
 /**
  * Content
  **/
-
-.student-spa_page,
-.programs_page,
-.clinical-esthetics_page,
-.faq_page
-	.banner
+.banner
 		position: relative
 
-	.entry_title
-		position: absolute
-		top: 50%
-		left: 0
-		right: 0
-		margin: 0 auto
-		text-align: center
-		background: none !important
+		.entry_title
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+			margin: 0 auto
+			text-align: center
+			background: none !important
 
-		+below(767px)
-			position: initial
+			+below(767px)
+				position: initial
 
-		span
-			position: relative
-			background-color: transparent !important
-			&:before
-				content: " "
-				background: url(images/center-line.jpg) repeat-x center
-				display: block
-				width: 25px
-				height: 1px
-				position: absolute
-				left: -25px
-				top: 50%
+			span
+				position: relative
+				background-color: transparent !important
+				&:before
+					content: " "
+					background: url(images/center-line.jpg) repeat-x center
+					display: block
+					width: 25px
+					height: 1px
+					position: absolute
+					left: -25px
+					top: 50%
 
-			&:after
-				content: " "
-				background: url(images/center-line.jpg) repeat-x center
-				display: block
-				width: 25px
-				height: 1px
-				position: absolute
-				right: -25px
-				top: 50%
+				&:after
+					content: " "
+					background: url(images/center-line.jpg) repeat-x center
+					display: block
+					width: 25px
+					height: 1px
+					position: absolute
+					right: -25px
+					top: 50%
 
 .content
 	letter-spacing: 0.5px

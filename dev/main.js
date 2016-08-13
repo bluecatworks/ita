@@ -5,7 +5,11 @@ require('bootstrap-styl/js/collapse');
 require('./main.styl');
 
 $(document).ready(function(){
-
+    $(".second-menu [href]").each(function() {
+    if (this.href == window.location.href) {
+        $(this).addClass("active");
+        }
+    });
 	$('body').css('display', 'block');
 
 	$('.logo-area').stickMe({
