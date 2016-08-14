@@ -13,3 +13,11 @@ body .alignleft {
     margin: 4px 0px 0px 10px;
     display: block;
 }
+.gallery img {
+height: auto !important;
+border: none !important;
+}
+.gallery-item {
+margin-top: 0 !important;
+margin-bottom: 0 !important;
+}
