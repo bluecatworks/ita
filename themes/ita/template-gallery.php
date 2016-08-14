@@ -1,13 +1,8 @@
 <?php /* Template Name: Gallery */ ?>
 <?php get_header(); ?>
-	<ul class="second-menu" data-tabs="tabs">
-		<li class="active"><a href="<?php bloginfo('url'); ?>/gallery" data-toggle="tab">Classes</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/fun-times-gallery" data-toggle="tab">Fun Times</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/students-gallery" data-toggle="tab">Students</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/community-outreach" data-toggle="tab">Community Outreach</a></li>
-	</ul>
+	<?php wp_nav_menu( array( 'menu' => 'gallery', 'theme_location' => 'header-menu', 'menu_class' => 'second-menu', 'container_class' => '') ); ?>
 	<?php if(have_posts()): the_post(); ?>
-		<div class="container big">
+		<div class="container big gallery_page">
 			<script>
 				$(function() {
 					$('.gallery-item a').magnificPopup({
