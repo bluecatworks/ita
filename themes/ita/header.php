@@ -48,10 +48,10 @@
 					</a>
 				</div>
 				<div class="col-md-4 text-right">
-					<div class="lang col-xs-6">
+					<div class="lang col-xs-6 col-md-12">
 						<?php echo do_shortcode('[GTranslate]'); ?>
 					</div>
-					<div class="search-box col-xs-6">
+					<div class="search-box col-xs-6 col-md-12">
 						<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<div>
 								<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="search..." />
@@ -95,7 +95,12 @@
 			<img src="<?php bloginfo('template_url'); ?>/images/menu-logo.png" alt="">
 		</a>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => ' ', 'container_class' => 'nav navbar-nav') ); ?>
-		<div class="socials">
+
+		<div class="signup">
+			<?php echo do_shortcode('[nsu_form]'); ?>
+		</div>
+
+		<div class="socials" style="clear:both">
 			<a class="tw" href=""></a>
 			<a class="face" href=""></a>
 			<a class="in" href=""></a>

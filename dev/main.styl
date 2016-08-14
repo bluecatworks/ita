@@ -98,6 +98,7 @@ header
 		a
 			color: #007777
 			font-size: 12px
+			margin: 0 2px
 
 .search-box
 	text-align: right
@@ -139,14 +140,17 @@ header
 	.container
 		padding: 0
 		width: 100%
+		margin: 2px 0 0
 	.logo-text
 		font-family: OptimusPrinceps
 		font-size: 21px
 		text-align: center
-		padding: 6px 0 0
+		padding: 6px 0 2px
 	.navbar-toggle
 		display: block
 		float: none
+		margin-top: 8px
+		margin-left: 4px
 		.icon-bar
 			background: #007777
 	.search-box-area
@@ -168,6 +172,7 @@ header
 	z-index: 1000
 	display: none
 	padding: 40px 20px 25px 40px
+	overflow-x: scroll
 	.close-menu
 		height: 16px
 		width: 16px
@@ -183,12 +188,18 @@ header
 		border-bottom: 1px solid #DCDCDC
 		padding: 12px 0 40px
 		width: 100%
-		margin: 40px 0 0
+		margin: 40px 0
 		ul
 			margin: 0px
 			list-style: none
 			li
 				margin: 4px 0
+				.sub-menu
+					margin: 0 0 0 20px
+					display: none
+					a
+						font-size: 12px
+						color: #808080
 			a
 				color: #222222
 				font-family: Raleway
@@ -197,10 +208,12 @@ header
 				font-size: 18px
 				&:hover
 					color: #007777
+	.nsu-form
+		label
+			display: none
+
 	.socials
 		padding: 29px 0 0
-		position: absolute
-		bottom: 10px
 		a
 			width: 40px
 			height: 40px
@@ -478,6 +491,24 @@ header
 		padding: 5px 0 4px
 		width: 100%
 
+.nsu-form
+	input[type="email"]
+		border: 0px
+		border-bottom: 2px solid #A1A1A1
+		padding: 0 10px 1px
+		font-size: 12px
+		font-style: italic
+		float: left
+		margin: 4px 0 0px
+		&::-webkit-input-placeholder
+			color: #444444
+	input[type="submit"]
+		font-size: 12px
+		background: inherit
+		border: 1px dotted #E9E9E9
+		padding: 3px 15px 3px
+		float: right
+
 /**
  * Sidebar
  **/
@@ -607,9 +638,6 @@ footer
 
 .no-marg
 	margin: 0px !important
-
-.width-100
-	width: 100%
 
 .navbar-toggle .icon-bar + .icon-bar
 	margin-top: 6px
@@ -846,3 +874,7 @@ footer
 			text-align: center
 			.text_right
 				text-align: center
+
+
+.width-100
+	width: 100%
