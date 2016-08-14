@@ -3,9 +3,11 @@
 	<?php if(have_posts()): the_post(); ?>
 		<div class="container">
 			<article class="page">
-				<h2 class="entry_title">
-					<?php the_title(); ?>
-				</h2>
+				<div class="text-center">
+					<h2 class="entry_title">
+						<span><?php the_title(); ?></span>
+					</h2>
+				</div>
 
 				<div class="entry_content">
 					<?php the_content(); ?>

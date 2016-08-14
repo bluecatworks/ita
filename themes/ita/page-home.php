@@ -16,10 +16,10 @@
 						<div class="inner_caption">
 							<h1>Skin Care</h1>
 							<div class="featured_caption">
-								<a href="http://itaskinbeauty.com/esthetics-program/">Esthetics</a><br>
-								<a href="?page_id=1024">Postgraduate Esthetics Training</a><br>
-								<a href="?page_id=1041">Continuing Education Classes</a><br>
-								<a href="?page_id=1177">Laser Certification (by AMMP)</a>
+								<a href="<?php bloginfo('url'); ?>/clinical-esthetics/">Esthetics</a><br>
+								<a href="<?php bloginfo('url'); ?>/advanced-esthetics-training/">Postgraduate Esthetics Training</a><br>
+								<a href="<?php bloginfo('url'); ?>/ce-continuing-education-classes/">Continuing Education Classes</a><br>
+								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser Certification (by AMMP)</a>
 							</div>
 						</div>
 					</div>
@@ -30,11 +30,11 @@
 						<div class="inner_caption">
 							<h1>Advanced Training</h1>
 							<div class="featured_caption">
-								<a href="?page_id=1024">Postgraduate Esthetics Training</a><br>
-								<a href="?page_id=1041">Continuing Education Classes</a><br>
-								<a href="?page_id=1177">Laser Certification (by AMMP)</a><br>
-								<a href="?page_id=1182">Licensing</a><br>
-								<a href="?page_id=2">Calendar</a>
+								<a href="<?php bloginfo('url'); ?>/advanced-esthetics-training/">Postgraduate Esthetics Training</a><br>
+								<a href="<?php bloginfo('url'); ?>/ce-continuing-education-classes/">Continuing Education Classes</a><br>
+								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser Certification (by AMMP)</a>
+								<a href="<?php bloginfo('url'); ?>/licensing">Licensing</a><br>
+								<a href="?<?php bloginfo('url'); ?>/calendar">Calendar</a>
 							</div>
 						</div>
 					</div>
@@ -45,12 +45,12 @@
 						<div class="inner_caption">
 							<h1>Health Care</h1>
 							<div class="featured_caption">
-								<a href="?page_id=1054">Certified Medical Assistant Program</a><br>
-								<a href="?page_id=1188">Externship</a><br>
-								<a href="?page_id=1173">National Certification</a><br>
-								<a href="?page_id=1060">Career Opportunities</a><br>
-								<a href="?page_id=1067">Financial Assistance</a><br>
-								<a href="?page_id=1177">Laser Certification (by AMMP)</a>
+								<a href="<?php bloginfo('url'); ?>/ma-program-description/">Certified Medical Assistant Program</a><br>
+								<a href="<?php bloginfo('url'); ?>/externship">Externship</a><br>
+								<a href="<?php bloginfo('url'); ?>/national-certification">National Certification</a><br>
+								<a href="<?php bloginfo('url'); ?>/cma-career-opportunities">Career Opportunities</a><br>
+								<a href="<?php bloginfo('url'); ?>/faq/#fa">Financial Assistance</a><br>
+								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser Certification (by AMMP)</a>
 							</div>
 						</div>
 					</div>
@@ -61,11 +61,11 @@
 						<div class="inner_caption">
 							<h1>CE Classes</h1>
 							<div class="featured_caption">
-								<a href="?page_id=1024">Postgraduate Esthetics Training</a><br>
-								<a href="?page_id=1041">Continuing Education Classes</a><br>
-								<a href="?page_id=1177">Laser Certification (by AMMP)</a><br>
-								<a href="?page_id=1041">Terms and Conditions</a><br>
-								<a href="?page_id=2">Calendar</a>
+								<a href="<?php bloginfo('url'); ?>/advanced-esthetics-training/">Postgraduate Esthetics Training</a><br>
+								<a href="<?php bloginfo('url'); ?>/ce-continuing-education-classes/">Continuing Education Classes</a><br>
+								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser Certification (by AMMP)</a>
+								<a href="<?php bloginfo('url'); ?>/ce-continuing-education-classes/">Terms and Conditions</a><br>
+								<a href="<?php bloginfo('url'); ?>/calendar">Calendar</a>
 							</div>
 						</div>
 					</div>
@@ -76,10 +76,10 @@
 						<div class="inner_caption">
 							<h1>Student Spa</h1>
 							<div class="featured_caption">
-								<a href="?page_id=773">About Spa</a><br>
-								<a href="?page_id=773">Available Treatments</a><br>
-								<a href="?page_id=773">Price List</a><br>
-								<a href="?page_id=773">Special Offers</a><br>
+								<a href="<?php bloginfo('url'); ?>/student-spa/">About Spa</a><br>
+								<a href="<?php bloginfo('url'); ?>/student-spa/">Available Treatments</a><br>
+								<a href="<?php bloginfo('url'); ?>/student-spa/">Price List</a><br>
+								<a href="<?php bloginfo('url'); ?>/student-spa/">Special Offers</a><br>
 							</div>
 						</div>
 					</div>
