@@ -8,17 +8,10 @@
 		+below(767px)
 			width: 100%
 
-	.grid
+	.gallery
 		margin-top: 25px
 
-		.item
-			width: 300px
-			height: 300px
-
-			@media (max-width: 1024px) and (orientation: portrait)
-				width: 192px
-				height: 192px
-
+		.gallery-item
 			+below(767px)
 				width: 100%
 				height: auto
@@ -46,25 +39,7 @@
 			img
 				mask-image: -webkit-gradient(linear, right 10%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.4)))
 				-webkit-mask-image: -webkit-gradient(linear, right 10%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.4)))
-
-		.item-width-2
-			width: 600px
-			@media (max-width: 1024px) and (orientation: portrait)
-				width: 384px
-
-			+below(767px)
-				width: 100%
-				height: auto
-
-		.item-height-2
-			height: 600px
-			@media (max-width: 1024px) and (orientation: portrait)
-				height: 384px
-
-			+below(767px)
-				width: 100%
-				height: auto
-
+				
 	.show-more
 		margin-top: 20px
 
