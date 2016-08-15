@@ -151,6 +151,7 @@ header
 		float: none
 		margin-top: 8px
 		margin-left: 4px
+		border-radius: 0px
 		.icon-bar
 			background: #007777
 	.search-box-area
@@ -165,14 +166,15 @@ header
 .left-collapse
 	position: fixed
 	height: 100%
+	min-height: 100%
 	background: #fff
 	width: 25%
 	top: 0px
 	left: 0px
-	z-index: 1000
+	z-index: 10000
 	display: none
-	padding: 40px 20px 25px 40px
-	overflow-x: scroll
+	padding: 40px 20px 150px 40px
+	overflow-y: scroll
 	.close-menu
 		height: 16px
 		width: 16px
@@ -213,7 +215,8 @@ header
 			display: none
 
 	.socials
-		padding: 29px 0 0
+		position: absolute
+		bottom: 15px
 		a
 			width: 40px
 			height: 40px
@@ -783,10 +786,40 @@ footer
 		&:hover
 			color: #1C1C1C
 
+.ai1ec-calendar-toolbar
+	border: 0px !important
+	margin-top: 40px !important
+
+.page .ai1ec-agenda-view .ai1ec-event .ai1ec-event-title
+	color: #444
+	text-decoration: underline
+	font-weight: normal
+	font-size: 14px
+
+.page .ai1ec-agenda-view .ai1ec-event .ai1ec-event-time
+	font-weight: normal
+
+.page .timely .ai1ec-btn
+	font-weight: normal !important
+
+.page .ai1ec-agenda-widget-view .ai1ec-date, .ai1ec-agenda-view .ai1ec-date
+	background: inherit !important
+	border: 0px !important
+
+.page .ai1ec-agenda-view .ai1ec-event
+	padding: 0.88em 1em 0.9em
+
 .mobile-display
 	display: none
 .mobile-hidden
 	display: block
+
+.ai1ec-event-footer
+	border: 0px
+
+.ai1ec-field-label,
+.ai1ec-field-value
+	width: auto !important
 
 /**
  * Responsive styles
@@ -827,15 +860,29 @@ footer
 		.search-box
 			padding: 0 0 10px
 	.left-collapse
+		padding: 30px 20px 20px
 		width: 100%
+		.socials
+			position: relative
+			top: 0px
+			padding: 20px 0 0
+			text-align: center
+		.nsu-form
+			display: none
 	.slideshow_big
 		display: none
 	img
 		max-width: 100%
 		height: auto
 
-	.logo-area .logo-text
-		font-size: 18px
+	.logo-area
+		.toggle-btn
+			width: 40px
+			padding: 0 0 0 5px
+		.logo-text
+			text-align: left
+			font-size: 16px
+			width: calc(100% - 40px)
 
 	.sticking .search-box-area
 		display: none !important

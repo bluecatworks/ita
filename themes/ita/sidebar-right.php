@@ -13,9 +13,9 @@
 
 	<div class="block-image">
 		<img src="<?php bloginfo('template_url'); ?>/images/home-blog.jpg" alt="">
-		<a href="/blog" class="position-center">ITA BLOG</a>
+		<a href="<?php echo get_site_url();  ?>/blog" class="position-center">ITA BLOG</a>
 		<div class="white-mask"></div>
 	</div>
 
-	<a class="block-link" href="">Calendar</a>
+	<a class="block-link" href="<?php echo get_site_url();  ?>/calendar">Calendar</a>
 </div>

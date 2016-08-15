@@ -48,10 +48,10 @@
 					</a>
 				</div>
 				<div class="col-md-4 text-right">
-					<div class="lang col-xs-6 col-md-12">
+					<div class="lang col-xs-12 col-md-12">
 						<?php echo do_shortcode('[GTranslate]'); ?>
 					</div>
-					<div class="search-box col-xs-6 col-md-12">
+					<div class="search-box col-xs-12 col-md-12">
 						<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<div>
 								<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="search..." />
@@ -66,14 +66,14 @@
 
 	<div class="logo-area width-100">
 		<div class="container">
-			<div class="col-md-3 col-xs-3">
+			<div class="col-md-3 col-xs-2 toggle-btn">
 				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="col-md-6 logo-text col-xs-9">
+			<div class="col-md-6 logo-text col-xs-10">
 				International Training Academy
 			</div>
 			<div class="col-md-3 search-box-area mobile-hidden">
