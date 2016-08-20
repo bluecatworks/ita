@@ -11,7 +11,7 @@
 			<span class="bottom_shadow"></span>
 			<ul class="slideshow" style="height: 194px; width: 100%">
 				<li class="featured featured_container1 imageslide" style="display: block; z-index: 1; left: 0px; width: 610px;">
-					<img src="<?php bloginfo('template_url'); ?>/images/crousel-1.png" title="skin-care" alt="" style="opacity: 1; visibility: visible; display: block;">
+					<img src="<?php bloginfo('template_url'); ?>/images/slider-11.jpg" title="skin-care" alt="" style="opacity: 1; visibility: visible; display: block;">
 					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
 						<div class="inner_caption">
 							<h1>Skin Care</h1>
@@ -25,7 +25,7 @@
 					</div>
 				</li>
 				<li class="featured featured_container2 imageslide" style="display: block; z-index: 2; left: 195px; width: 610px;">
-					<img src="<?php bloginfo('template_url'); ?>/images/crousel-2.png" title="adv-training" alt="" style="opacity: 1; visibility: visible; display: block;">
+					<img src="<?php bloginfo('template_url'); ?>/images/slider-12.jpg" title="adv-training" alt="" style="opacity: 1; visibility: visible; display: block;">
 					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
 						<div class="inner_caption">
 							<h1>Advanced Training</h1>
@@ -40,7 +40,7 @@
 					</div>
 				</li>
 				<li class="featured featured_container3 imageslide" style="display: block; z-index: 3; left: 390px; width: 610px;">
-					<img src="<?php bloginfo('template_url'); ?>/images/crousel-3.png" title="health-care" alt="" style="opacity: 1; visibility: visible; display: block;">
+					<img src="<?php bloginfo('template_url'); ?>/images/slider-13.jpg" title="health-care" alt="" style="opacity: 1; visibility: visible; display: block;">
 					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
 						<div class="inner_caption">
 							<h1>Health Care</h1>
@@ -56,7 +56,7 @@
 					</div>
 				</li>
 				<li class="featured featured_container4 imageslide" style="display: block; z-index: 4; left: 585px; width: 610px;">
-					<img src="<?php bloginfo('template_url'); ?>/images/crousel-4.png" title="ce-classes" alt="" style="opacity: 1; visibility: visible; display: block;">
+					<img src="<?php bloginfo('template_url'); ?>/images/slider-14.jpg" title="ce-classes" alt="" style="opacity: 1; visibility: visible; display: block;">
 					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
 						<div class="inner_caption">
 							<h1>CE Classes</h1>
@@ -71,7 +71,7 @@
 					</div>
 				</li>
 				<li class="featured featured_container5 imageslide" style="display: block; z-index: 5; left: 780px; width: 610px;">
-					<img src="<?php bloginfo('template_url'); ?>/images/crousel-5.png" title="student-spa" alt="" style="opacity: 1; visibility: visible; display: block;">
+					<img src="<?php bloginfo('template_url'); ?>/images/slider-15.jpg" title="student-spa" alt="" style="opacity: 1; visibility: visible; display: block;">
 					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
 						<div class="inner_caption">
 							<h1>Student Spa</h1>
