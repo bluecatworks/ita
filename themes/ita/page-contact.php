@@ -32,6 +32,9 @@
 						<?php echo do_shortcode('[contact-form-7 id="41" title="Contact page form"]'); ?>
 					</div>
 				</article>
+				<div class="schedule-link text-center">
+					<a href="<?php bloginfo('template_url'); ?>/schedule-tour">Schedule Tour</a>
+				</div>
 			</div>
 
 			<div class="col-sm-3">

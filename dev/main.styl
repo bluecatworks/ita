@@ -9,6 +9,13 @@
 @import 'styl/gallery'
 //@import 'styl/utils'
 
+table,
+th,
+td
+	border: 1px solid #666
+	border-collapse: collapse
+	padding: 0 10px
+
 /**
  * Fonts
  **/
@@ -290,7 +297,7 @@ header
 						position: absolute
 						top: 42px
 						left: 0
-						z-index: 999
+						z-index: 9999
 						background: #fff
 						text-align: left
 						padding: 10px
@@ -301,6 +308,31 @@ header
 							a
 								font-size: 14px
 
+#wpcf7-f237-p235-o1
+	.row
+		> div
+			margin: 10px 0
+
+	.wpcf7-submit
+		width: 200px
+		margin: 0 auto
+
+.schedule-link
+	a
+		border: 1px dotted #e9e9e9
+		display: inline-block
+		text-align: center
+		margin: 20px 0 10px
+		font-size: 14px
+		padding: 8px 0
+		color: #444
+		width: 250px
+		font-weight: bold
+
+		&:hover
+			background: #077
+			color: #fff
+			border: 1px solid #077
 /**
  * Content
  **/

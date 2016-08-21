@@ -66,7 +66,14 @@
 
 	<div class="logo-area width-100">
 		<div class="container">
-			<div class="col-md-3 col-xs-2">
+			<div class="col-md-3 col-xs-2 hidden-xs">
+			</div>
+			<div class="col-md-3 col-xs-2 toggle-btn visible-xs">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 			<div class="col-md-6 logo-text col-xs-10">
 				International Training Academy
@@ -82,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container hidden-xs">
 			<div class="hor-menu">
 				<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => ' ', 'container_class' => '') ); ?>
 			</div>

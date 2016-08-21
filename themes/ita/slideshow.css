@@ -220,7 +220,7 @@ Aviacordion
 	top:0;
 	left:0;
 	height:auto;
-	width:228px !important;
+	width:286px !important;
 }
 
 .aviacordion .heading_clone{
@@ -590,7 +590,7 @@ background: rgba(51,129,255,0.75);
 
 	.aviacordion .heading_clone {
 		z-index: 98;	
-		height: 35px!important;
+		height: 50px!important;
 	}
 
 

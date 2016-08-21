@@ -15,6 +15,9 @@
 					<?php the_content(); ?>
 				</div>
 			</article>
+			<div class="schedule-link text-center">
+				<a href="<?php bloginfo('template_url'); ?>/schedule-tour">Schedule Tour</a>
+			</div>
 		</div>
 	<?php endif; ?>
 

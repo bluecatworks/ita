@@ -12,7 +12,7 @@
 	</div>
 
 	<div class="block-image">
-		<img src="<?php bloginfo('template_url'); ?>/images/home-blog.jpg" alt="">
+		<img src="<?php bloginfo('template_url'); ?>/images/our_blogs.png" alt="">
 		<a href="<?php echo get_site_url();  ?>/blog" class="position-center">ITA BLOG</a>
 		<div class="white-mask"></div>
 	</div>
