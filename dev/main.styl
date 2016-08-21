@@ -54,6 +54,7 @@ body
 /**
  * Header
  **/
+
 header
 	padding: 0 5px
 	background: #F0F0F0
@@ -251,6 +252,54 @@ header
 	z-index: 5
 	top: 0px
 	left: 0px
+
+.hor-menu
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+
+		.sub-menu
+			display: none
+
+	#menu-menu-1
+		margin: 0
+		padding: 0
+		list-style: none
+		text-align: center
+		display: -webkit-flex
+		-webkit-justify-content: space-around
+		display: flex
+		justify-content: space-around
+
+		li
+			display: inline-block
+
+			a
+				font-size: 16px
+				padding: 10px 25px
+				display: inline-block
+
+			&.menu-item-has-children
+				position: relative
+
+				&:hover
+					ul
+						display: block
+						width: 250px
+						position: absolute
+						top: 42px
+						left: 0
+						z-index: 999
+						background: #fff
+						text-align: left
+						padding: 10px
+
+						li
+							width: 100%
+
+							a
+								font-size: 14px
 
 /**
  * Content
