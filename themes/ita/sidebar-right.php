@@ -1,5 +1,15 @@
 
 <div class="sidebar-right">
+	<?php if(is_page('blog')) { ?>
+		<h3>Categories</h3>
+		<div class="cats">
+		<?php $args = array(
+			'exclude'  =>  array('6', '7', '5'),
+			'title_li'            => __( '' ),
+			); ?>
+		<?php echo wp_list_categories($args); ?>
+		</div>
+		<?php } ?>
 	<div class="block info">
 		830 N. Meacham Road,<br>
 		Schaumburg, IL 60173<br>

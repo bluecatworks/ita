@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<?php if(have_posts()): the_post(); ?>
 		<div class="entry_image">
-			<span class="to-blog"><a href="/blog" class="">&larr; Back to the BLog</a></span> 
+			<span class="to-blog"><a href="<?php bloginfo('url'); ?>/blog" class="">&larr; Back to the BLog</a></span> 
 			<span class="to-next"><?php previous_post_link('%link &rarr;'); ?></span> 
 			<?php
 			if ( has_post_thumbnail() )
@@ -23,17 +23,19 @@
 		<div class="container">
 			<article class="post single">
 				<div class="entry_content">
+					<p><?php the_tags(); ?></p>
 					<?php the_content(); ?>
 				</div>
 			</article>
 			<div class="bottom-a">
 				<div class="row">
 					<div class="col-md-4 mobile-display"><span>Share:</span> <?php echo do_shortcode('[wp_social_sharing social_options="facebook,twitter,linkedin" icon_order="f,t,g,l,p,x"  show_icons="1"]'); ?></div>
-					<div class="col-md-4" style="padding-top: 13px"><a href="/blog" class="">&larr; Back to the BLog</a></div>
+					<div class="col-md-4" style="padding-top: 13px"><a href="<?php bloginfo('url'); ?>/blog" class="">&larr; Back to the BLog</a></div>
 					<div class="col-md-4 mobile-hidden"><span>Share:</span> <?php echo do_shortcode('[wp_social_sharing social_options="facebook,twitter,linkedin" icon_order="f,t,g,l,p,x"  show_icons="1"]'); ?></div>
 					<div class="col-md-4 text_right" style="padding-top: 13px"><?php previous_post_link('%link &rarr;'); ?></div>
 				</div>
 			</div>
+			<?php comments_template(); ?>
 		</div>
 	<?php endif; ?>
 

@@ -9,10 +9,12 @@
 				</div>
 				<div class="col-md-6 text-right">
 					<div class="socials">
-						<a class="tw" href=""></a>
-						<a class="face" href=""></a>
-						<a class="in" href=""></a>
-						<a class="you" href=""></a>
+						<a class="tw" href="https://twitter.com/Intl_Academy"></a>
+						<a class="face" href="https://www.facebook.com/IntlTraining"></a>
+						<a class="in" href="https://www.linkedin.com/company/international-training- academy"></a>
+						<a class="you" href="https://www.youtube.com/user/ISBAcademy"></a>
+						<a class="yelp" href="https://www.yelp.com/biz/international-training- academy-schaumburg- 4"></a>
+						<a class="inst" href="https://www.instagram.com/intl_academy/"></a>
 					</div>
 				</div>
 			</div>
