@@ -14,7 +14,7 @@
 					<img src="<?php bloginfo('template_url'); ?>/images/skin-care.jpg" title="skin-care" alt="" style="opacity: 1; visibility: visible; display: block;">
 					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
 						<div class="inner_caption">
-							<h1>Skin Care</h1>
+							<h1>Esthetics Program</h1>
 							<div class="featured_caption">
 								<a href="<?php bloginfo('url'); ?>/750-hour-esthetics-aesthetics-program">Esthetics (Aesthetics)</a><br>
 								<a href="<?php bloginfo('url'); ?>/clinical-esthetics/">Clinical Esthetics</a><br>
@@ -26,21 +26,6 @@
 								<a href="<?php bloginfo('url'); ?>/career-in-esthetics/">Career in Skin Care</a><br>
 								<a href="<?php bloginfo('url'); ?>/job-placement">Job Placement</a><br>
 								<a href="<?php bloginfo('url'); ?>/start-dates">Start Dates</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="featured featured_container2 imageslide" style="display: block; z-index: 2; left: 195px; width: 668px;">
-					<img src="<?php bloginfo('template_url'); ?>/images/adv-training.jpg" title="adv-training" alt="" style="opacity: 1; visibility: visible; display: block;">
-					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
-						<div class="inner_caption">
-							<h1>Advanced Training/CE</h1>
-							<div class="featured_caption">
-								<a href="<?php bloginfo('url'); ?>/advanced-esthetics-training/">Postgraduate Clinical Esthetics</a><br>
-								<a href="<?php bloginfo('url'); ?>/ce-continuing-education-classes/">Continuing Education</a><br>
-								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser training by AMMP</a>
-								<a href="<?php bloginfo('url'); ?>/terms-conditions">Terms and Conditions</a><br>
-								<a href="<?php bloginfo('url'); ?>/calendar-2">Calendar</a>
 							</div>
 						</div>
 					</div>
@@ -61,6 +46,22 @@
 								<a href="<?php bloginfo('url'); ?>/career-in-ma">Career in Health Care</a><br>
 								<a href="<?php bloginfo('url'); ?>/job-placement">Job Placement</a><br>
 								<a href="<?php bloginfo('url'); ?>/start-dates">Start Dates</a><br>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="featured featured_container2 imageslide" style="display: block; z-index: 2; left: 195px; width: 668px;">
+					<img src="<?php bloginfo('template_url'); ?>/images/ce-classes.jpg" title="adv-training" alt="" style="opacity: 1; visibility: visible; display: block;">
+					<div class="slideshow_caption" style="display: block; opacity: 1; bottom: -340px;">
+						<div class="inner_caption">
+							<h1>Advanced Training/<br><strong>CE</strong></h1>
+							<div class="featured_caption">
+								<a href="<?php bloginfo('url'); ?>/advanced-esthetics-training/">Postgraduate Clinical Esthetics</a><br>
+								<a href="<?php bloginfo('url'); ?>/ce-continuing-education-classes/">Continuing Education</a><br>
+								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser training by AMMP</a>
+								<a href="<?php bloginfo('url'); ?>/terms-conditions">Terms and Conditions</a><br>
+								<a href="<?php bloginfo('url'); ?>/calendar-2">Calendar</a>
 							</div>
 						</div>
 					</div>
