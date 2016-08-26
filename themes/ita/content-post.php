@@ -14,8 +14,8 @@
 		</div>
 		<div class="entry_date">
 			<?php echo get_the_date( 'F j, Y', $post->post_ID ); ?>
-			<p><?php the_tags(); ?></p>
 		</div>
+		<p class="tags"><small><?php the_tags(); ?></small></p>
 		<div class="entry_content">
 			<?php the_excerpt(); ?>
 		</div>

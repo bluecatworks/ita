@@ -18,12 +18,14 @@
 							<div class="featured_caption">
 								<a href="<?php bloginfo('url'); ?>/750-hour-esthetics-aesthetics-program">Esthetics (Aesthetics)</a><br>
 								<a href="<?php bloginfo('url'); ?>/clinical-esthetics/">Clinical Esthetics</a><br>
-								<a href="<?php bloginfo('url'); ?>">Hands on practices</a><br>
-								<a href="<?php bloginfo('url'); ?>">Curriculum</a><br>
-								<a href="<?php bloginfo('url'); ?>">Additional Certification</a><br>
-								<a href="<?php bloginfo('url'); ?>">Career outlook</a><br>
+								<a href="<?php bloginfo('url'); ?>/hands-on-practices">Hands on practices</a><br>
+								<a href="<?php bloginfo('url'); ?>/curriculum">Curriculum</a><br>
+								<a href="<?php bloginfo('url'); ?>/additional-certification">Additional Certification</a><br>
 								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser Certification (by AMMP)</a>
-								<a href="<?php bloginfo('url'); ?>">Start Dates</a>
+								<a href="<?php bloginfo('url'); ?>/licensing">State licensing</a><br>
+								<a href="<?php bloginfo('url'); ?>/career-in-esthetics/">Career in Skin Care</a><br>
+								<a href="<?php bloginfo('url'); ?>/job-placement">Job Placement</a><br>
+								<a href="<?php bloginfo('url'); ?>/start-dates">Start Dates</a>
 							</div>
 						</div>
 					</div>
@@ -36,10 +38,9 @@
 							<div class="featured_caption">
 								<a href="<?php bloginfo('url'); ?>/advanced-esthetics-training/">Postgraduate Clinical Esthetics</a><br>
 								<a href="<?php bloginfo('url'); ?>/ce-continuing-education-classes/">Continuing Education</a><br>
-								<a href="<?php bloginfo('url'); ?>">Certification</a><br>
 								<a href="<?php bloginfo('url'); ?>/laser-presented-by-ammp/">Laser training by AMMP</a>
-								<a href="<?php bloginfo('url'); ?>/licensing">Terms and Conditions</a><br>
-								<a href="?<?php bloginfo('url'); ?>/calendar">Calendar</a>
+								<a href="<?php bloginfo('url'); ?>/terms-conditions">Terms and Conditions</a><br>
+								<a href="<?php bloginfo('url'); ?>/calendar-2">Calendar</a>
 							</div>
 						</div>
 					</div>
@@ -51,13 +52,15 @@
 							<h1>Certified Medical Assistant Program</h1>
 							<div class="featured_caption">
 								<a href="<?php bloginfo('url'); ?>/ma-program-description/">Clinical MA</a><br>
-								<a href="<?php bloginfo('url'); ?>/externship">Administrative MA</a><br>
-								<a href="<?php bloginfo('url'); ?>/externship">EKG training</a><br>
-								<a href="<?php bloginfo('url'); ?>/externship">Phlebotomy training</a><br>
+								<a href="<?php bloginfo('url'); ?>/administrative-medical-assisting/">Administrative Medical Assisting</a><br>
+								<a href="<?php bloginfo('url'); ?>/ekg-training">EKG training</a><br>
+								<a href="<?php bloginfo('url'); ?>/phlebotomy-training">Phlebotomy training</a><br>
+								<a href="<?php bloginfo('url'); ?>/curriculum">Curriculum</a><br>
+								<a href="<?php bloginfo('url'); ?>/externship">Externship</a><br>
 								<a href="<?php bloginfo('url'); ?>/national-certification">National Certification</a><br>
-								<a href="<?php bloginfo('url'); ?>/externship">Curriculum</a><br>
-								<a href="<?php bloginfo('url'); ?>/cma-career-opportunities">Career outlook</a><br>
-								<a href="<?php bloginfo('url'); ?>/externship">Start Dates</a><br>
+								<a href="<?php bloginfo('url'); ?>/career-in-ma">Career in Health Care</a><br>
+								<a href="<?php bloginfo('url'); ?>/job-placement">Job Placement</a><br>
+								<a href="<?php bloginfo('url'); ?>/start-dates">Start Dates</a><br>
 							</div>
 						</div>
 					</div>
@@ -71,7 +74,7 @@
 								<a href="<?php bloginfo('url'); ?>/student-spa/">About Spa</a><br>
 								<a href="<?php bloginfo('url'); ?>/student-spa/">Available Treatments</a><br>
 								<a href="<?php bloginfo('url'); ?>/student-spa/">Price List</a><br>
-								<a href="<?php bloginfo('url'); ?>/student-spa/">Special Offers</a><br>
+								<a href="<?php bloginfo('url'); ?>/student-spa/">Specials</a><br>
 							</div>
 						</div>
 					</div>

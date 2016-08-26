@@ -27,5 +27,5 @@
 		<div class="white-mask"></div>
 	</div>
 
-	<a class="block-link" href="<?php echo get_site_url();  ?>/calendar">Calendar</a>
+	<a class="block-link" href="<?php echo get_site_url();  ?>/calendar-2">Calendar</a>
 </div>

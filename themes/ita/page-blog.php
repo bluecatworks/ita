@@ -29,8 +29,8 @@
 								<?php the_category(); ?>
 								<h2 class="post-title"><?php the_title(); ?></h2>
 								<div class="date"><?php the_date(); ?></div>
-								<p><?php the_tags(); ?></p>
-								<?php the_content(); ?>
+								<p class="tags"><small><?php the_tags(); ?></small></p>
+								<?php the_excerpt(); ?>
 								<a href="<?php the_permalink(); ?>" class="more">Read more</a>
 
 								<div class="row dotted">
@@ -47,7 +47,6 @@
 							<?php }
 						}
 					?>
-					<?php wp_reset_query(); ?>
 					<div class="paginate">
 						<?php
 							$big = 999999999;
@@ -60,6 +59,7 @@
 							) );
 						?>
 					</div>
+					<?php wp_reset_query(); ?>
 				</div>
 
 			</div>

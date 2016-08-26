@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 	<?php if(have_posts()): the_post(); ?>
+			<?php
+			if ( has_post_thumbnail() )
+			{ ?>
+
 		<div class="entry_image">
 			<span class="to-blog"><a href="<?php bloginfo('url'); ?>/blog" class="">&larr; Back to the BLog</a></span> 
 			<span class="to-next"><?php previous_post_link('%link &rarr;'); ?></span> 
-			<?php
-			if ( has_post_thumbnail() )
-			{
-				the_post_thumbnail('full');
-			}
-			?>
+				<?php the_post_thumbnail('full'); ?>
 			<div class="post-info">
 				<span class="entry_date">
 					<?php the_date(); ?>
@@ -18,6 +17,22 @@
 				</h2>
 				<span class="author">By <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
 			</div>
+			<?php } else { ?>
+				<div class="entry_no_image container">
+					<span class="to-blog col-sm-6"><a href="<?php bloginfo('url'); ?>/blog" class="">&larr; Back to the BLog</a></span> 
+					<span class="to-next col-sm-6 text-right"><?php previous_post_link('%link &rarr;'); ?></span>
+					<br><br> 
+					<div class="post-info">
+						<span class="entry_date">
+							<?php the_date(); ?>
+						</span>
+						<h2 class="new_entry_title">
+							<?php the_title(); ?>
+						</h2>
+						<span class="author">By <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
+					</div>
+				</div>
+				<?php } ?>
 		</div>
 
 		<div class="container">

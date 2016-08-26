@@ -188,7 +188,9 @@
 									<span>Our Students Say</span>
 								</h2>
 							</div>
-
+							<iframe width="420" height="315" src="https://www.youtube.com/embed/szWuGoo1KB0" frameborder="0" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/8VJePsNbFr8" frameborder="0" allowfullscreen></iframe>
+							<iframe width="420" height="315" src="https://www.youtube.com/embed/74N-tBuxtwA" frameborder="0" allowfullscreen></iframe>
 							<p>We take pride in having incredibly successful students who work not only in a number of U.S. States, but also in several countries!</p>
 
 							<div class="video">
