@@ -23,6 +23,8 @@
 
 	<script src="<?php bloginfo('template_url'); ?>/assets/main.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
 
 	<?php wp_head(); ?>
 
