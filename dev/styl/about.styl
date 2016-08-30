@@ -1,33 +1,40 @@
+
+.container.small
+	max-width: 850px
+.sidemenu
+	position: fixed
+	left: 20px
+	top: 220px
+	z-index: 9
+
+	+below(767px)
+		display: none
+
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+
+		li
+			a
+				font-size: 14px
+				font-weight: bold
+				font-style: italic
+				font-family: Cormorant
+				padding-left: 20px
+				display: inline-block
+				background: url(images/square.png) no-repeat left center
+
+				&.active
+					background: url(images/square-active.png) no-repeat left center
+
+			&.current-menu-item
+				a
+					background: url(images/square-active.png) no-repeat left center
+
 .about_page
 	.container.small
 		max-width: 890px
-
-	.sidemenu
-		position: fixed
-		left: 20px
-		top: 220px
-		z-index: 9
-
-		+below(767px)
-			display: none
-
-		ul
-			margin: 0
-			padding: 0
-			list-style: none
-
-			li
-				a
-					font-size: 14px
-					font-weight: bold
-					font-style: italic
-					font-family: Cormorant
-					padding-left: 20px
-					display: inline-block
-					background: url(images/square.png) no-repeat left center
-
-					&.active
-						background: url(images/square-active.png) no-repeat left center
 
 
 	.entry_title

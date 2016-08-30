@@ -1,24 +1,32 @@
 <?php get_header(); ?>
-	<ul class="second-menu" data-tabs="tabs">
-		<li class="active"><a href="#qa" data-toggle="tab">Q&A with Dr. Doran</a></li>
-		<li><a href="#fa" data-toggle="tab">Financial assistance</a></li>
-		<li><a href="#is" data-toggle="tab">International Students</a></li>
-	</ul>
 	<script>
 		$(function() {
 			$('.qa .item .q').on('click', function() {
 				$(this).next().slideToggle();
 			});
 		});
+
+		window.onhashchange = function() {
+		$('.active').removeClass('active');
+		var hash = window.location.hash;
+		$( "a[href='"+hash+"']" ).addClass('active');
+	}
 	</script>
 	<?php if(have_posts()): the_post(); ?>
+			<div class="sidemenu">
+				<ul>
+					<li><a href="#qa" class="active">Q&A with Dr. Doran</a></li>
+					<li><a href="#fa">Financial Assistance</a></li>
+					<li><a href="#is">international Students</a></li>
+				</ul>
+			</div>
 		<div class="banner">
 			<img src="<?php bloginfo('template_url'); ?>/images/faqbanner.png" />
-			<h2 class="entry_title">
+			<h2 class="entry_title" id="qa">
 				<span><?php the_title(); ?></span>
 			</h2>
 		</div>
-		<div class="container">
+		<div class="container small">
 			<article class="page">
 				<div class="entry_content">
 					<?php the_content(); ?>

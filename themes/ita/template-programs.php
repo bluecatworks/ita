@@ -1,6 +1,13 @@
 <?php /* Template Name: Programs */ ?>
 <?php get_header(); ?>
-	<?php wp_nav_menu( array( 'menu' => 'programs', 'theme_location' => 'header-menu', 'menu_class' => 'second-menu', 'container_class' => '') ); ?>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.item .q').on('click', function() {
+				$(this).next().slideToggle();
+			});
+		});
+	</script>
 	<?php if(have_posts()): the_post(); ?>
 		<div class="banner">
 			<img src="<?php bloginfo('template_url'); ?>/images/programs-banner.png" />
@@ -8,10 +15,12 @@
 				<span><?php the_title(); ?></span>
 			</h2>
 		</div>
-		<div class="container">
+
+			<?php wp_nav_menu( array( 'menu' => 'programs', 'theme_location' => 'header-menu', 'menu_class' => '', 'container_class' => 'sidemenu') ); ?>
+		<div class="container small">
 			<article class="page">
 
-				<div class="entry_content">
+				<div class="entry_content qa">
 					<?php the_content(); ?>
 				</div>
 			</article>

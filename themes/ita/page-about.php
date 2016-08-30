@@ -16,15 +16,36 @@
 		<div class="container small">
 			<div class="sidemenu">
 				<ul>
-					<li><a href="#founder" class="active">Our Founder</a></li>
+					<li><a href="#why" class="active">Why Choose US</a></li>
+					<li><a href="#founder">Our Founder</a></li>
 					<li><a href="#history">School History</a></li>
 					<li><a href="#facultystaff">Faculty and Staff</a></li>
-					<!--li><a href="#community">Community Involvement</a></li-->
+					<li><a href="#community">Community Involvement</a></li>
 					<li><a href="#students">Our Students Say</a></li>
 				</ul>
 			</div>
 			<article class="page">
 				<div class="entry_content">
+						<div id="why">
+								<h2 class="entry_title">
+									<span>Why Choose US</span>
+								</h2>
+							<p>We are founded and led by Dr. Doran, who was trained as a doctor of Dermatology<br>
+							We have built a reputation as one of the best vocational school in Illinois<br>
+							We are an elite school, which has been called “Harvard of Skin care” by Spa owners<br>
+							We offer the most advanced and updated Clinical Esthetics and Medical Assisting programs<br>
+							We teach unique techniques and will make you the best in your profession<br>
+							We believe that we can make the world a better place, by changing the lives of our students<br>
+							We believe that professional development and education rises from a balance of support and challengeWe are a team fully invested in helping each student succeed in a new career<br>
+							We take pride in the quality of education we provide for Skin Care, Medical Assisting, and Continuing Education!<br>
+							We have developed high moral, ethical, and educational standards<br>
+							We are committed to making our graduates the best they can be<br>
+							We know that each student’s success is our success, and we share in their accomplishments<br>
+							We have a 100% state licensure exam with one of the highest scores nationwide<br>
+							We have a 100% graduation rate<br>
+							All of our graduates are employed or self-employed</p>
+							<p class="p1">The  philosophy  of  our  school  can  be  simply  described  by  three  inseparable  words: <strong>Quality, Professionalism, and Excellence!</strong></p>
+						</div>
 						<div id="founder">
 							<div class="text-center">
 								<h2 class="entry_title">
