@@ -1,4 +1,4 @@
-
+﻿
 .js_active .slideshow img{
 	visibility:hidden;
 }
@@ -630,6 +630,32 @@ background: #3381FF;
 	color: #fff;
 	line-height: 22px;
 	font-size: 13px;
+}
+
+@media (max-width: 767px) {
+.home_page div .aviacordion .slideshow {
+	height: auto !important;
+}
+.home_page div .aviacordion .featured {
+	position: relative !important;
+	left: 0 !important;
+	    display: block !important;
+}
+.home_page div .aviacordion .featured, .home_page div .aviacordion .slideshow_caption {
+	width: 100% !important;
+	height: 380px !important;
+	display: block !important
+}
+.home_page div .aviacordion .featured img {
+	    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100% !important;
+}
+.home_page .slideshow_big {
+	display: block !important;
+}
 }
 
 /* ========================== End Slideshow ========================== */

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -53,7 +53,7 @@
 				</div>
 				<div class="col-md-4 text-right">
 					<div class="lang col-xs-12 col-md-12">
-						<?php echo do_shortcode('[GTranslate]'); ?>
+						<?php //echo do_shortcode('[GTranslate]'); ?>
 					</div>
 					<div class="search-box col-xs-12 col-md-12">
 						<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
