@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 	<script>
 		$(function() {
 			$('.qa .item .q').on('click', function() {
@@ -17,7 +17,6 @@
 				<ul>
 					<li><a href="#qa" class="active">Q&A with Dr. Doran</a></li>
 					<li><a href="#fa">Financial Assistance</a></li>
-					<li><a href="#is">international Students</a></li>
 				</ul>
 			</div>
 		<div class="banner">

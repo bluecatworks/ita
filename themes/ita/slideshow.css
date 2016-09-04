@@ -658,4 +658,10 @@ background: #3381FF;
 }
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+	.slideshow {
+		overflow-x: scroll !important;
+	}
+}
+
 /* ========================== End Slideshow ========================== */

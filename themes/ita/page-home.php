@@ -1,4 +1,4 @@
-<?php /* Template Name: Home page */ ?>
+﻿<?php /* Template Name: Home page */ ?>
 
 <?php get_header(); ?>
 
@@ -87,7 +87,7 @@
 	<div class="container">
 		<?php if(have_posts()): the_post(); ?>
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-sm-9">
 				<article class="page">
 
 					<?php //echo do_shortcode('[metaslider id=16]'); ?>
@@ -105,8 +105,8 @@
 				
 				<div class="hr"></div>
 
-				<div class="row new-row">
-					<div class="col-md-4">
+				<div class="row new-row post-items">
+					<div class="col-sm-4 item">
 						<h2 class="content-title"><?php echo get_the_title(13); ?></h2>
 						<div class="relative">
 							<?php echo get_the_post_thumbnail(13); ?>
@@ -115,7 +115,7 @@
 						<div class="chapter"><?php echo get_the_excerpt(13); ?></div>
 						<a href="<?php echo get_the_permalink(13); ?>" class="more">Read more</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4 item">
 						<h2 class="content-title"><?php echo get_the_title(20); ?></h2>
 						<div class="relative">
 							<?php echo get_the_post_thumbnail(20); ?>
@@ -124,7 +124,7 @@
 						<div class="chapter"><?php echo get_the_excerpt(20); ?></div>
 						<a href="<?php echo get_the_permalink(20); ?>" class="more">Read more</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4 item">
 						<h2 class="content-title"><?php echo get_the_title(22); ?></h2>
 						<div class="relative">
 							<?php echo get_the_post_thumbnail(22); ?>
@@ -136,7 +136,7 @@
 				</div>
 
 			</div>
-			<div class="col-md-3">
+			<div class="col-sm-3">
 				<?php include (TEMPLATEPATH . '/sidebar-right.php'); ?>
 			</div>
 		</div>

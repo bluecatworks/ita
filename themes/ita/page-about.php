@@ -6,20 +6,18 @@
 		$( "a[href='"+hash+"']" ).addClass('active');
 	}
 	$(function() {
-		$('.accordeon .item .acc-title').on('click', function() {
-			$(this).toggleClass('open');
-			$(this).next().slideToggle();
-		});
+		$('.active').removeClass('active');
+		var hash = window.location.hash;
+		$( "a[href='"+hash+"']" ).addClass('active');
 	});
 	</script>
 	<?php if(have_posts()): the_post(); ?>
 		<div class="container small">
 			<div class="sidemenu">
 				<ul>
-					<li><a href="#why" class="active">Why Choose US</a></li>
+					<li><a href="#why" class="active">Why Choose Us</a></li>
 					<li><a href="#founder">Our Founder</a></li>
 					<li><a href="#history">School History</a></li>
-					<li><a href="#facultystaff">Faculty and Staff</a></li>
 					<li><a href="#community">Community Involvement</a></li>
 					<li><a href="#students">Our Students Say</a></li>
 				</ul>
@@ -28,7 +26,7 @@
 				<div class="entry_content">
 						<div id="why">
 								<h2 class="entry_title">
-									<span>Why Choose US</span>
+									<span>Why Choose Us</span>
 								</h2>
 							<p>We are founded and led by Dr. Doran, who was trained as a doctor of Dermatology<br>
 							We have built a reputation as one of the best vocational school in Illinois<br>
@@ -98,23 +96,6 @@
 								</div>
 							</div>
 
-							<div class="accordeon">
-								<div class="item">
-									<p class="acc-title open">Mission</p>
-									<p class="acc-content">Our mission is to provide high quality of vocational training to our students and empower them to realize their professional goals in their chosen careers. The Academy is dedicated to nurturing its diverse, multicultural family of learners, promoting academic excellence and professionalism, and positively impacting local communities.</p>
-								</div>
-
-								<div class="item">
-									<p class="acc-title">History</p>
-									<p class="acc-content">Our mission is to provide high quality of vocational training to our students and empower them to realize their professional goals in their chosen careers. The Academy is dedicated to nurturing its diverse, multicultural family of learners, promoting academic excellence and professionalism, and positively impacting local communities.</p>
-								</div>
-
-								<div class="item">
-									<p class="acc-title">The Name</p>
-									<p class="acc-content">Our mission is to provide high quality of vocational training to our students and empower them to realize their professional goals in their chosen careers. The Academy is dedicated to nurturing its diverse, multicultural family of learners, promoting academic excellence and professionalism, and positively impacting local communities.</p>
-								</div>
-							</div>
-
 							<div class="row">
 								<div class="col-sm-6 values">
 									<h3 class="text-center">Values</h3>
@@ -134,47 +115,6 @@
 									• Create an inclusive and positive environment for all students<br>
 									• Provide a positive work environment for staff<br>
 									• Develop and maintain ties with the community</p>
-								</div>
-							</div>
-						</div>
-
-						<div id="facultystaff">
-							<div class="text-center">
-								<h2 class="entry_title">
-									<span>Faculty and Staff</span>
-								</h2>
-							</div>
-
-							<p class="name">Dr. Natalia Doran</p>
-							<p><strong>Dr. Natalia Doran is the founder and president of the International Training Academy.</strong> With more than 30 years of experience as a <strong>Dermatologist in Europe, and as an Esthetics and Medical Assisting teacher in the United States</strong>, Dr. Doran still continues to works relentlessly to improve the level of skin care professionals and revolutionize methods and techniques used in the industry. </p>
-
-							<p>Dr. Doran’s knowledge, medical education, practical experience, and passion make her uniquely qualified to provide the highest standards of training in esthetics. To her, an Esthetician’s training is about the knowledge and unique techniques that maintain lasting results. Dr. Doran holds a secret to ultimate skincare treatments that she shares only with her students. It is her goal to give her students the confidence, knowledge, and practical skills they need to make the superior estheticians.</p>
-
-							<p><strong>Dr. Doran has received her Medical Degree in Dermatology, as well as a M.S. in Educational Psychology</strong>. She is a frequent public speaker and a published author.  Although she no longer practices dermatology, to stay abreast the new developments in science and medicine, Dr. Doran regularly attends Dermatology Round Tables. She is also actively involved with several non-profit organizations. Dr. Doran is fluent in English and Russian.</p>
-						
-							<div class="row drs">
-								<div class="col-sm-6">
-									<p class="name">Ms. Anastasia</p>
-									<p><strong>Ms. Anastasia has earned both her undergraduate and graduate degrees from Northwestern University.</strong> She had worked in finance and consulting before being selected for a prestigious congressional fellowship in Germany. While abroad, Ms. Anastasia had an opportunity to gain invaluable work experience with one of the world’s largest cosmetics companies.</p>
-									<p>She joined International Skin Beauty Academy as the Academy’s manager, with focus on operations and strategic development. Ms. Anastasia brings with her extensive international experience (her studies and work have taken her to Western and Eastern Europe and Asia), dedication to the highest standards and practices, and passion for skin care. Ms. Anastasia strongly believes in the importance of social engagement and is involved with several educational and human rights organizations. She is fluent in English, Russian, and German.</p>
-
-									<p class="name">Ms. Helen</p>
-									<p><strong>Ms. Helen has both her educations from ITA and she is a Nationally Certified Medical Assistant and a licensed Esthetician.</strong> Her extensive real-life experience – from assisting professors in large teaching hospitals to working with a dermatologist and vascular surgeon in an elite practice – has allowed Ms. Helen to become a highly respected healthcare professional. Ms. Helen’s acute sense of professionalism and phenomenal understanding of medical subject, ensure that her students become extraordinarily and successful Medical Assistants. She is fluent in English and Spanish.</p>
-
-									<p class="name">Ms. Kim</p>
-									<p><strong>MMs. Kim’s exceptional knowledge, skills, and desire to go farther are extremely valuable to ISBA.</strong> A former student of Dr. Doran herself, Ms. Kim completely shares ISBA’s passion for nurturing true Skin whisperers. <br>Ms. Kim, a licensed Esthetics Teacher, is also a successful spa owner. She has extensive experience as an Esthetician, and a keen understanding of skin care-related topics from basic to advance. Currently Ms. Kim is focusing on growing her private business and expands her practice beyond Esthetics.</p>
-								</div>
-								<div class="col-sm-6">
-									<p class="name">Ms. Carrie</p>
-									<p><strong>Ms. Carrie is a Cosmetologist, Esthetician, Esthetics Teacher, and a former salon owner.</strong>After of being a salon owner for over 20 years she realized that her heart calls to skin care and she was one of the first ITA’s graduates.  During her practice as a medical Esthetician she decided to be a part of ITA team and completed Esthetics Teacher program. Ms. Carrie brings unparalleled knowledge and experience, having owned her own thriving salon for over two decades. Ms. Carrie has an unbelievable breadth and depth of experience, and is able to teach our students what it takes to succeed in the real world.</p>
-
-									<p class="name">Ms. Nancy</p>
-									<p><strong>Few people understand – or can teach Makeup better than Ms. Nancy.</strong> After receiving her BFA in Photography from the University of Illinois at Chicago, Ms. Nancy decided that she wanted more than to capture the world around her – she wanted to make it more beautiful! As a professional photographer and a makeup artist for many years, she completed her Esthetics program at ITA. She is a licensed esthetician and a certified makeup artist. She is one of the best professionals working in the Greater Chicago area. From private events, to large commercial shoots for Fortune 500 companies, Ms. Nancy has been a Makeup Artist in demand for two decades.<br>In addition to her successful business, Ms. Nancy has also taught Makeup classes to cancer patients and survivors. She is fluent in English and Italian.</p>
-
-									<p class="name">Ms. Sandra</p>
-									<p><strong>Ms. Sandra, an extremely intelligent person and is another future Doctor who is ready to change the world!!!</strong> Originally came to ISBA as a transfer Esthetics student, disappointed by the low level of education at her previous school. Studying under Dr. Doran gave Ms. Sandra an opportunity to understand Skin and Esthetics from a different perspective and inspired her to become an Esthetics Teacher. She became one of first team players who shared Dr. Doran’s philosophy and desire to take the skin care field to another level, by raising the bar for Estheticians.</p>
-									<p>Ms. Sandra earned her BA in Liberal Arts from the University of Illinois at Chicago and attended Soma Institute Massage Therapy School. Licensed both in massage and esthetics, Ms. Sandra has gained advanced skills and knowledge through diverse settings. Additionally, Ms. Sandra has worked in a cosmetic dermatologist’s practice performing laser procedures for skin resurfacing,veins, and hair removal; she also has experience dealing with acne of all grades. Ms. Sandra’s extensive education and vast professional experience, as well as passion and commitment to skin care, made her an outstanding instructor and mentor.</p>
-									<p><strong>Inspired by Dr. Doran she applied for Medical school and Ms. Sandra is currently pursuing her medical degree.</strong> She is fluent in English and Spanish.</p>
 								</div>
 							</div>
 						</div>
