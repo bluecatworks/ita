@@ -353,7 +353,10 @@ disappointed!!!
 		  controls: false,
 		  pager: true
 		});
+
+
 				});
+ 
 			</script>
 			
 			<article class="page">
@@ -362,6 +365,10 @@ disappointed!!!
 				</div>
 			</article>
 		</div>
+		
+			<div class="schedule-link text-center">
+				<a href="<?php bloginfo('template_url'); ?>/schedule-tour">Schedule Tour</a>
+			</div>
 	<?php endif; ?>
 
 <?php get_footer(); ?>

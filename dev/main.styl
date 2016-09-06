@@ -782,12 +782,13 @@ textarea
 			font-size: 24px
 			width: 85%
 			margin: 0 auto
+			font-family: Cormorant !important
+			font-style: italic
+			font-size: 36px
 			left: 0
 			right: 0
-			color: #444
+			color: #000
 			top: 50%
-			-webkit-transform: translateY(-50%)
-			transform: translateY(-50%)
 			text-align: center
 			font-weight: 800
 			padding: 6px 0 5px
@@ -1107,7 +1108,7 @@ footer
 			height: auto
 @media (max-width: 767px)
 	.container
-		width: 720px
+		width: 100%
 
 @media (max-width: 480px)
 	.mobile-display
@@ -1190,6 +1191,32 @@ footer
 			text-align: center
 			.text_right
 				text-align: center
+
+@media (max-width: 767px)
+	.gallery_page .gallery-item
+		width: 50%
+
+	.gallery_page .gallery-item:before
+		font-size: 12px
+
+	.testimonials .bx-pager
+		display: none
+@media(max-width: 767px) and (orientation: landscape)
+	.left-collapse
+		width: 50%
+
+	.home_page .post-items .item
+		width: 33.33% !important
+		float: left !important
+		padding: 0 15px !important
+		min-height: 750px !important;
+
+		.content-title
+			font-size: 24px !important
+
+		img
+			max-width: 100% !important
+			height: auto
 
 
 .width-100

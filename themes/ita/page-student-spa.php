@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 	<?php if(have_posts()): the_post(); ?>
 		<div class="banner">
 			<img src="<?php bloginfo('template_url'); ?>/images/in-icon-act.png" />
@@ -21,6 +21,10 @@
 				</div>
 			</div>
 		</div>
+		
+			<div class="schedule-link text-center">
+				<a href="<?php bloginfo('template_url'); ?>/schedule-tour">Schedule Tour</a>
+			</div>
 	<?php endif; ?>
 
 <?php get_footer(); ?>

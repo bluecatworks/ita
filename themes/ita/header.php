@@ -24,6 +24,7 @@
 	<script src="<?php bloginfo('template_url'); ?>/assets/main.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+	
 
 
 	<?php wp_head(); ?>
@@ -106,16 +107,6 @@
 			<img src="<?php bloginfo('template_url'); ?>/images/menu-logo.png" alt="">
 		</a>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => ' ', 'container_class' => 'nav navbar-nav') ); ?>
-
-		<div class="signup">
-			<?php echo do_shortcode('[nsu_form]'); ?>
-		</div>
-
-		<div class="socials" style="clear:both">
-			<a class="tw" href=""></a>
-			<a class="face" href=""></a>
-			<a class="in" href=""></a>
-			<a class="you" href=""></a>
-		</div>
-	</div><div class="menu-overlay"></div>
+	</div>
+	<div class="menu-overlay"></div>
 	<div class="content clear">
