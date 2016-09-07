@@ -19,7 +19,7 @@
 	<script src="<?php bloginfo('template_url'); ?>/javascript/bootstrap.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/jquery.bxslider.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/jquery.magnific-popup.min.js"></script>
-	<script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 
 	<script src="<?php bloginfo('template_url'); ?>/assets/main.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/javascript/sticky-header.js"></script>
